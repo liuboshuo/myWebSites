@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+
+    <style type="text/css">
+
+        #time{
+            background: yellow;
+            border: 10px solid blue;
+            height: 100px;
+            font-size: 60px;
+            text-align: center;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+//        //一次
+//         var time1 = window.setTimeout(function doSomeThing(){
+//            alert("1");
+//        },2000);
+//        //清除
+////        window.clearTimeout(time1);
+//
+//        var time2 = window.setInterval(function doSomeThing(){
+//            window.console.log("hello world");
+//        },1000);
+//
+//
+//        function fun1(){
+//            window.clearInterval(time1);
+//        }
+//
+//        function fun2() {
+//            window.clearInterval(time2);
+//        }
+
+        window.onload = init;
+
+        function init() {
+
+            start();
+
+            window.setInterval("start()",1000);
+
+        }
+        function start(){
+            var date = new Date();
+            var timeObject = document.getElementById("time");
+            timeObject.innerHTML = "时间:" + date.toLocaleString();
+        }
+    </script>
+
+
+</head>
+<body>
+<div id="time">
+</div>
+<!--<input type="button" value="清除1" onclick="fun1()">-->
+<!--<input type="button" value="清除2" onclick="fun2()">-->
+</body>
+</html>

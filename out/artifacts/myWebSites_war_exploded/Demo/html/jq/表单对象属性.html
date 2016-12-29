@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("input").click(function () {
+
+                //enabled,checked,selected,disabled
+//                $("input:disabled").css("background","red");
+
+                //$("input:enabled").css("background","red");
+
+
+
+//                alert($("input:checked").length);
+
+
+
+                alert($("input:selected").html());
+
+
+            });
+        });
+    </script>
+
+
+
+
+</head>
+<body>
+    <form>
+        <input name="email" disabled="disabled" />
+        <input name="id" />
+        <input type="checkbox" name="newsletter" checked="checked" value="Daily" />
+        <input type="checkbox" name="newsletter" value="Weekly" />
+        <input type="checkbox" name="newsletter" checked="checked" value="Monthly" />
+
+
+        <select>
+            <option selected="selected">1</option>
+            <option selected="selected">2</option>
+            <option selected="selected">3</option>
+        </select>
+    </form>
+
+    <input type="button" value="点击">
+</body>
+</html>

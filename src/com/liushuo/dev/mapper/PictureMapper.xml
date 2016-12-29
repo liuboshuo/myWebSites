@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushuo.dev.mapper.PictureMapper">
+	
+	
+	<select id="getDirectoryByLevel" resultType="Directory" parameterType="int">
+		 select *from categories where level = ${level};
+	</select> 
+	
+	<select id="getPicturesByLevel" resultMap="getPicture" parameterType="PictureQo">
+		SELECT count(*) as count, c.*,p.*  from categories c inner join pictures p on p.cateId = c.id where c.level = ${level} group by p.cateId limit ${pageStart},${pageSize};
+	</select>
+	<select id="getPicturesCountByLevel" resultType="int" parameterType="PictureQo">
+		SELECT count(*) as count from (SELECT count(*) as count from categories c inner join pictures p on p.cateId = c.id where c.level = ${level} group by p.cateId) c;
+	</select>
+	<resultMap type="Picture" id="getPicture">
+			<id property="id" column="id"/>
+			<result property="cateId" column="cateId"/>
+			<result property="username" column="username"/>
+			<result property="name" column="name"/> 
+			<result property="title" column="title"/>
+			<result property="path" column="path"/>
+			<result property="width" column="width"/> 
+			<result property="height" column="height"/>
+			<result property="intro" column="intro"/>
+			<result property="count" column="count"/>
+		<!-- 	<result property="sha1" column="sha1"/> 
+			<result property="createtime" column="createtime"/>
+			<result property="modifytime" column="modifytime"/> --> 
+		<association property="dir" javaType="Directory">
+		
+			<id property="id" column="id"/>
+			<result property="name" column="name"/>
+			<result property="pId" column="pid"/>
+			<result property="level" column="level"/> 
+			
+			
+		</association>
+	</resultMap>
+	
+	<select id="getAllPicturesAtDir" resultType="Picture" parameterType="int">
+		 select *from pictures where cateId = ${cateId};
+	</select> 
+</mapper>

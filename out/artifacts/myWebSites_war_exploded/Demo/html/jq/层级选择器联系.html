@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("input").click(function () {
+                //后代选择
+                //$("div a").css("background","red");
+
+
+                //后代选择
+                //$("div > a").css({background:"red"});
+
+                //兄弟选择
+                //$("#li+").css("background","red");
+
+                //选择后边的额所有兄弟
+                $("#li ~").css("background","red");
+            });
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+
+    <div>
+        <p>
+            这是段落1
+            <a href="">a链接</a>
+        </p>
+        <a href="">这是a链接</a>
+    </div>
+
+    <div>
+        <ul>
+            <li id="li">a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+        </ul>
+    </div>
+
+
+    <input type="button" value="点击我">
+
+
+</body>
+</html>

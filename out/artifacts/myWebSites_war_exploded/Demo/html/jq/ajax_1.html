@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax_1</title>
+    <style>
+        div  {
+            border: 1px solid #abcdef;
+            width:300px;
+            height: 300px;
+        }
+        img{
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+    <script>
+        $(function () {
+//           $("#infomation").click(function () {
+//               $.ajax({
+//                   url : "/test/ajax1?date"+Math.random(),
+//                   type : "get",
+//                   dataType : "text",
+//                   data : {},
+//                   success : function (text) {
+//                        $("div").html(text);
+//                   },
+//                   error :function () {
+//
+//                   }
+//               })
+//
+//           }) ;
+
+            $("#infomation").click(function () {
+                $.ajax({
+                    url : "/test/ajax2?date"+Math.random(),
+                    type : "get",
+                    dataType : "json",
+                    data : {},
+                    success : function (text) {
+                        for (var i = 0 ; i<text.data.length;i++){
+                            var model = text.data[i];
+                            $("ul").append("<li>"+model.userName + model.password + "</li>");
+                        }
+                    },
+                    error :function (error) {
+                        $("div").html(error);
+                    }
+                });
+            }) ;
+            $(document).ajaxStart(function () {
+                $("img").show();
+            });
+            $(document).ajaxStop(function () {
+                $("img").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="获取信息" id="infomation">
+    <p></p>
+    <img src="../../images/loading.gif">
+    <ul></ul>
+</body>
+</html>

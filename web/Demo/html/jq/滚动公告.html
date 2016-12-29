@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            position: absolute;
+            left:200px;
+        }
+        ul li{
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+    <script>
+        window.setInterval(function () {
+            var node1 = $("ul > :first").remove().clone(true);
+            $("ul").append(node1);
+//            e.preventDefault();//阻止浏览器行为
+        },1000);
+    </script>
+</head>
+<body>
+    <ul>
+
+        <li>这是公告1...</li>
+
+        <li>这是公告2...</li>
+
+        <li>这是公告3...</li>
+
+        <li>这是公告4...</li>
+
+        <li>这是公告5...</li>
+
+        <li>这是公告6...</li>
+
+        <li>这是公告7...</li>
+
+        <li>这是公告8...</li>
+
+        <li>这是公告9...</li>
+
+        <li>这是公告10...</li>
+
+    </ul>
+
+</body>
+</html>

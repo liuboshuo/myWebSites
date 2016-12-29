@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            border:1px solid blue;
+        }
+        table tr{
+            height: 30px;
+        }
+        table th{
+            border:1px solid blue;
+        }
+        table td{
+            border:1px solid blue;
+            text-align: center;
+        }
+        table td a{
+            margin-left: 5px;
+            color: red;
+
+
+        }
+
+        .lookContent{
+            width: 500px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+        .lookContent p{
+            border-bottom: 1px solid blue;
+        }
+        .lookContent > p > strong{
+            margin-right: 6px;
+        }
+    </style>
+
+    <script>
+        $(function () {
+
+
+            $(".look").click(function () {
+
+                var arr = [];
+                $(this).parent().siblings().each(function (index) {
+
+                    //$(".lookContent>p").eq(index).find("span").text($(this).text());
+                    arr.push($(this).text());
+
+                });
+
+                $(".lookContent>p").each(function (index) {
+                    $(this).children("span").text(arr[index]);
+                })
+                
+            });
+
+            $(".delete").click(function () {
+                $(this).parent().parent().remove();
+            });
+
+            $(".update").click(function () {
+
+                修改input输入修改
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职位</th>
+            <th>工资</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>23</td>
+            <td>前端工程师</td>
+            <td>60</td>
+            <td><a href="#" class="look">查看</a><a href="#" class="delete">删除</a><a href="#" class="update">修改</a></td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>28</td>
+            <td>资深java工程师</td>
+            <td>12000</td>
+            <td><a href="#" class="look">查看</a><a href="#" class="delete">删除</a><a href="#" class="update">修改</a></td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>30</td>
+            <td>项目经理</td>
+            <td>10000+提成</td>
+            <td><a href="#" class="look">查看</a><a href="#" class="delete">删除</a><a href="#" class="update">修改</a></td>
+        </tr>
+    </table>
+
+    <div class="lookContent">
+
+        <p><strong>姓名:</strong><span></span></p>
+        <p><strong>年龄:</strong><span></span></p>
+        <p><strong>职位:</strong><span></span></p>
+        <p><strong>工资:</strong><span></span></p>
+
+    </div>
+</body>
+</html>

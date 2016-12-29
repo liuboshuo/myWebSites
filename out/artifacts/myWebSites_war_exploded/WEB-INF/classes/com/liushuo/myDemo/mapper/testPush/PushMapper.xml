@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushuo.myDemo.mapper.testPush.PushMapper">
+
+	<insert id="insertDeviceToken"  parameterMap="pushMap">
+
+		insert into user_device (deviceToken) values (#{deviceToken});
+
+	</insert>
+
+	<select id="isExitsDeviceToken" resultType="int" parameterMap="pushMap">
+
+		SELECT count(*) as count FROM user_device where deviceToken = #{deviceToken};
+
+	</select>
+
+	<parameterMap id="pushMap" type="Push">
+
+		<parameter property="deviceToken" javaType="String"></parameter>
+
+	</parameterMap>
+
+</mapper>

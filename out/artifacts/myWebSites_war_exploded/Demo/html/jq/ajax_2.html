@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script src="../../../Res/jquery.js"></script>
+
+
+    <script>
+
+        $(function () {
+            $('input[type="button"').click(function () {
+
+                var data = $("#divForm").serialize();
+
+                console.log(data);
+            })
+
+
+        })
+
+
+    </script>
+
+    <style>
+
+        #divForm{
+            position: relative;
+            border: 1px solid red;
+            min-height: 100px;
+            width: 250px;
+            padding-bottom: 40px;
+        }
+        input[type="text"]{
+            width: 150px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        input[type="button"]{
+            position: absolute;
+            width: 60px;
+            height: 30px;
+            background: red;
+            margin-top: 10px;
+            left: 30%;
+            padding-left: -30px;
+        }
+        .formTitle {
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <form id="divForm">
+
+        <span class="formTitle">用户名:</span><input type="text" name="name" id="name" /> <br/>
+        <span class="formTitle">邮箱:</span><input type="text" name="mail" id="mail" /> <br/>
+        <span class="formTitle">url:</span><input type="text" name="url" id="url" /> <br/>
+        <span class="formTitle">qq:</span><input type="text" name="qq" id="qq"/> <br/>
+        <span class="formTitle">sype:</span><input type="text" name="skype" id="skype"/> <br/>
+
+        <input type="button" value="提交">
+    </form>
+
+</body>
+</html>

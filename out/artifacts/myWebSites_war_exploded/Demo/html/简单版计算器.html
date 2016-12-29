@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+
+    <script type="text/javascript">
+
+        function btnClick() {
+            var tx1 = document.getElementById("tx1").value;
+            var tx2 = document.getElementById("tx2").value;
+
+            var fh = document.getElementById("fuhao").value;
+            var number1 = parseFloat(tx1);
+            var number2 = parseFloat(tx2);
+            var number3;
+            if(fh == "+"){
+                number3 = number1 + number2;
+            }else if(fh == "-"){
+                number3 = number1 - number2;
+            }else if (fh == "*"){
+                number3 = number1 * number2;
+            }else {
+                number3 = number1 / number2;
+            }
+            var obj3 = document.getElementById("tx3");
+            obj3.value = number3;
+        }
+
+    </script>
+</head>
+<body>
+
+<input type="text" id="tx1"/>
+<select id="fuhao">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<input type="text" id="tx2"/>
+<input type="button" value="等于" onclick="btnClick()"/>
+<input type="text" id="tx3"/>
+</body>
+</html>

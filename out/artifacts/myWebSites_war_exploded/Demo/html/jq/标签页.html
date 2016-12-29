@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #ul{
+            height:30px;
+            margin-bottom: 10px;
+        }
+
+        #ul li{
+            height:30px;
+            line-height: 30px;
+            padding: 0px;
+            border: 1px solid red;
+            float: left;
+            margin-right: 3px;
+        }
+
+        #ul li.liShow{
+            background: red;
+        }
+        #divContent div{
+            width:  300px;
+            height:300px;
+            border: 1px solid #abcdef;
+            display: none;
+        }
+
+        #divContent div.show {
+            display: block;
+        }
+
+    </style>
+    <script type="text/javascript" src="../../../Res/jquery.js">
+    </script>
+
+    <script>
+        $(function () {
+
+
+            $("li").click(function(){
+
+//                $("li").css("background","yellow");
+//
+//
+//                $(this).css("background","white");
+//                $("#divContent div").css("display","none");
+//                $("#divContent div").eq($(this).index()).css("display","block");
+
+
+
+                $(this).addClass("liShow").siblings().removeClass("liShow");
+
+                $("#divContent div").eq($(this).index()).css("display","block").siblings().css("display","none");
+
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <ul id="ul">
+        <li class="liShow">php</li>
+        <li>ruby</li>
+        <li>python</li>
+    </ul>
+
+    <div id="divContent">
+        <div class="show">php......</div>
+        <div>ruby.....</div>
+        <div>python.....</div>
+    </div>
+</body>
+</html>

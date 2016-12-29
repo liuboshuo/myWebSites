@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!-- 配置前端的dispatchServlet -->
+
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>Config/spring/spring_config.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!-- contextConfigLocation配置springmvc加载的配置文件（配置处理器映射器,适配器等等）
+            如果不配置，默认加载。/WEB-INF/servlet名称-servlet.xml(springmvc-servlet.xml)
+        -->
+
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>Config/spring/springmvc.xml</param-value>
+        </init-param>
+    </servlet>
+    <!--
+        第一种:*.action访问以.action结尾由DispatcherServlet进行解析
+        第二种:/,所以访问的地址都有DispatcherServlet进行解析,对于静态文件的解析需要配置不让DispatcherServelet进行解析
+        第三种:/*，这样配置不对，使用这种配置，最终要转发到一个jsp页面时，仍然会有DispatcherServlet解析jsp地址,不能根据jsp页面找到handler,会出现错误
+     -->
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>

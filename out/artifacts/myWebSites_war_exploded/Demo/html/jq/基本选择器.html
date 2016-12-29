@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本选择器</title>
+
+    <script type="text/javascript" src="../../../Res/jquery.js">
+
+    </script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+
+            $("input").click(function () {
+                $("li:first").css("background","black");
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <input type="button" value="点击">
+</body>
+</html>

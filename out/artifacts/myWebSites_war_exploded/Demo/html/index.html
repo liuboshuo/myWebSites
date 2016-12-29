@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <style type="text/css">
+        .selectCity{
+            width: 100px;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid blue;
+            text-align: center;
+        }
+        ul{
+            padding: 0px;
+            margin-top: 20px;
+            border: 1px solid blue;
+            list-style-type:  none;
+            width: 100px;
+            display: none;
+        }
+        ul li{
+            height: 20px;
+            padding: 5px 0px 5px 0px;
+        }
+        ul li:hover{
+            background: #ccc;
+        }
+
+    </style>
+    
+    <script>
+        $(function () {
+            $(".selectCity").click(function (e) {
+                $("ul").show();
+                e.stopPropagation();
+            });
+            $(document).click(function () {
+                $("ul").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="selectCity">选择城市</div>
+    <ul>
+        <li>上海</li>
+        <li>北京</li>
+        <li>深圳</li>
+        <li>广州</li>
+        <li>香港</li>
+        <li>澳门</li>
+    </ul>
+</body>
+</html>

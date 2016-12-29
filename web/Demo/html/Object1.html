@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象1</title>
+
+    <style>
+
+        #d1{
+            width: 100px;
+            height: 100px ;
+            background: black;
+            color: #008aff;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+
+        var obj = {name:"张三丰",age:24,
+
+            taiji:function(){
+                alert("打太极");
+            },
+
+            zuofan:function(){
+                alert("made meail");
+            }
+
+        };
+
+//        obj.taiji();
+
+//        obj.zuofan();
+
+        function btnTap() {
+            var obj = document.getElementsByClassName("button1").item(0);
+            alert(obj.value);
+            obj.value = "改变value";
+            alert(obj.value);
+        }
+
+        function divOnmouseover() {
+            var object = document.getElementById("d1");
+            object.style.fontSize = "30px";
+            object.style.background = "red";
+            object.style.color = "orange";
+        }
+
+        function divOnmouseout() {
+            var object = document.getElementById("d1");
+            object.style.fontSize = "16px";
+            object.style.background = "black";
+            object.style.color = "#008aff";
+        }
+    </script>
+</head>
+<body>
+
+    <input class="button1" type="button" value="点击" onclick="btnTap()">
+
+    <div id="d1" onmouseover="divOnmouseover()" onmouseout="divOnmouseout()">
+        value
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $(".clickbtn").click(function () {
+
+
+                //获取值
+
+                //alert($("img").attr("src"));
+
+                //设置值
+//                $("img").attr("src","b.jpg");
+
+                //删除src属性
+                //$("img").removeAttr("src");
+
+                //$("img").removeProp("src");
+
+
+
+                //$("input[type='checkbox']").prop("checked");
+
+                $("input[type='checkbox']").prop("checked",true);
+
+
+
+
+
+
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="a.png"/>
+
+
+    <form>
+        <input type="checkbox" value="12">
+    </form>
+
+
+    <input type="button" value="点击我" class="clickbtn" />
+
+
+</body>
+</html>

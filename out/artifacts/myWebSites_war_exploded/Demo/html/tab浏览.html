@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab切换浏览样式</title>
+    <style type="text/css">
+
+        .d1{
+            width: 500px;
+            border: 1px solid red;
+        }
+        ul{
+            height:50px;
+            padding:0px;
+            margin: 0px;
+        }
+        ul li{
+            list-style-type: none;
+            float: left;
+            width:98px;
+            height: 50px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .div1 , .div3 , .div2, .div4 {
+            display: none;
+            height: 300px;
+            padding: 5px;
+        }
+
+        .div1{
+            display: block;
+        }
+    </style>
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <script type="application/javascript">
+        $.ready(function () {
+
+
+
+        });
+
+        function showDiv(t){
+            hinddenDiv();
+
+            $(".div"+t.value).css("display","block");
+
+            showBorder();
+            t.style.borderBottom = "1px solid white";
+        }
+        function hinddenDiv() {
+            for (var i = 1;i<=4;i++){
+                $(".div"+i).css("display","none");
+            }
+        }
+        function showBorder() {
+            var data = $("li");
+            data.each(function () {
+                this.style.borderBottom = "1px solid red";
+            })
+        }
+    </script>
+
+</head>
+<body>
+    <div class="d1">
+        <ul>
+            <li value="1" onmousemove="showDiv(this)">国际新闻</li>
+            <li value="2" onmouseover="showDiv(this)">国内新闻</li>
+            <li value="3" onmousemove="showDiv(this)">体育新闻</li>
+            <li value="4" onmouseover="showDiv(this)">娱乐细纹</li>
+            <li value="5"></li>
+        </ul>
+        <div class="div1"> 欧赔三方框架上地附近后死快点发货烧<br/>开后放开始的风景收款发动机九点十分<br/>惊世毒妃了肯定积分独守空房快乐十分</div>
+        <div class="div2"> 肯定及副本呢谁看见对方<br/>你是东方红可是今年地方谁看见对方和框架<br/>和水电费可是对方开始的房间号的时刻发挥</div>
+        <div class="div3"> 速度快解放吧接口是<br/>发谁看见的回复沙发搜狐<br/>发回复沙发iOS啊艾仕</div>
+        <div class="div4"> 速度快解放接口是打发<br/>考多少分开始叫对方搜到附近惊世<br/>毒妃上搭建费is奇偶发的</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击放大</title>
+
+
+    <style>
+        /*.button1{*/
+            /*width: 100px;*/
+            /*height: 200px;*/
+        /*}*/
+    </style>
+
+
+    <script type="text/javascript">
+
+        function btnTap(){
+            var object = document.getElementsByClassName("button1").item(0);
+            object.width += 20;
+        }
+
+    </script>
+</head>
+<body>
+
+    <img src="../images/banner01.jpg" width="100" class="button1">
+    <input  type="button" value="点击放大" onclick="btnTap()"/>
+</body>
+</html>

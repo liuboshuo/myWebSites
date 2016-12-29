@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery插件使用</title>
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+    <script type="text/javascript" src="../../../Res/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../../Res/jquery.validate.messages_cn.js"></script>
+
+    <style>
+
+
+        body{
+            width:100%;
+        }
+        #form {
+
+            margin-left: 60%;
+            margin-top: 6%;
+            width:30%;
+            background: royalblue;
+        }
+
+        #form > div{
+            background: pink;
+        }
+
+        #form > div > div{
+            padding-left: 10px;
+            height: 60px;
+            line-height: 45px;
+            position: relative;
+
+        }
+
+        #form .form_title{
+            display: inline-block;
+            height: 100%;
+            min-width: 60px;
+            margin-right: 2px;
+        }
+
+        #form .form-submit{
+            display: inline-block;
+            width: 60%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: orchid;
+            border: 1px solid orchid;
+        }
+
+        #form .form-con{
+            width: 60%;
+            height: 30px;
+            line-height: 30px;
+        }
+
+
+        #form input[type='button']{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+
+        }
+
+        #form label{
+            position: absolute;
+            color: red;
+            font-size: 6px;
+            top: 29px;
+            left: 72px;
+        }
+
+
+
+        #form .div_register{
+            font-size: 30px;
+            color: red;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <script>
+        $(function(){
+
+
+          $("form").validate();
+
+        });
+    </script>
+    <form id="form" action="test.html" method="post">
+
+        <div class="div_register">注册</div>
+        <div>
+
+            <div>
+                <span class="form_title">用户名:</span>
+                <input type="text"  class="required form-con" minlength="6" name="name" />
+            </div>
+            <div>
+                <span class="form_title">邮箱:</span>
+                <input type="text" class="required email form-con" name="email"/>
+            </div>
+            <div>
+                <span class="form_title">手机号:</span>
+                <input type="text" class="form-con" name="url">
+            </div>
+            <div>
+                <span class="form_title">密码:</span>
+                <input type="password" id="pwd" class="form-con" name="url">
+            </div>
+            <div>
+                <span class="form_title">url:</span>
+                <input type="password"  class="form-con" name="url">
+            </div>
+            <div>
+                <span class="form_title">url:</span>
+                <input type="text" class="url form-con"  name="url">
+            </div>
+            <div class="div_submit">
+                <span class="form_title">&nbsp</span>
+                <input type="submit" class="form-submit" value="提交"/>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

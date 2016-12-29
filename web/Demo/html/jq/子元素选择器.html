@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("input").click(function () {
+//                $("ul li:first-child").css("background","blue");
+
+                //$("ul li:first-of-type").css("background","blue");
+
+//                $("ul li:last-child").css("background","blue");
+                //$("ul li:last-of-type").css("background","blue");
+
+//                $("li:nth-child(2)").css("background","blue");
+
+                $("ul li:nth-of-type(2)").css("background","blue");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <ul>
+        <li>John</li>
+        <li>Karl</li>
+        <li>Brandon</li>
+    </ul>
+    <ul>
+        <li>Glen</li>
+        <li>Tane</li>
+        <li>Ralph</li>
+    </ul>
+    <input type="button" value="点击我">
+</body>
+</html>

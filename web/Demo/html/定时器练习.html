@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换</title>
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <style type="text/css">
+
+        .top {
+            float: left;
+            background: pink;
+            border: 2px solid red;
+            font-size: 16px;
+        }
+        .child1{
+            float: left;
+            width: 600px;
+            height: 400px;
+        }
+
+        .child2{
+            float: left;
+            width:100px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            margin: 6px;
+            display: block;
+            width:20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = init;
+
+        var count = 1;
+        var time;
+        function init(){
+
+            fn();
+            startImage();
+        }
+
+        function fn() {
+            //获取Html节点
+            clearColor();
+            var obj = $("li").get(count-1);
+            obj.style.background = "yellow";
+            count ++;
+            var object = document.getElementById("img");
+            object.src = "../images/0" + count + ".jpg";
+            if (count >= 6){
+                count = 0;
+            }
+
+        }
+
+        function stopFn(){
+            window.clearInterval(time);
+        }
+
+        function startImage() {
+            time = window.setInterval("fn()",1000);
+        }
+        function stopFn1(index){
+            count = index.value;
+            var object = document.getElementById("img");
+            object.src = "../images/0" + index.value + ".jpg"
+            window.clearInterval(time);
+
+            clearColor();
+
+            index.style.background = "yellow";
+        }
+        function start1() {
+            time = window.setInterval("fn()",1000);
+        }
+
+        function clearColor() {
+            $("li").each(function () {
+                this.style.background = "pink";
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="child1">
+            <a href="">
+                <img id="img" src="../images/01.jpg" onmouseover="stopFn()" onmouseout="startImage()"/>
+            </a>
+        </div>
+
+        <div class="child2">
+            <ul class="top-ul">
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="1"><a href="">1</a></li>
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="2"><a href="">2</a> </li>
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="3"><a href="">3</a> </li>
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="4"><a href="">4</a></li>
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="5"><a href="">5</a> </li>
+                <li onmouseover="stopFn1(this)" onmouseout="start1()" value="6"><a href="">6</a> </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

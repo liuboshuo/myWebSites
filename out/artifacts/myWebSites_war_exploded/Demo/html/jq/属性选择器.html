@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+
+    <script type="text/javascript" src="../../../Res/jquery.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $("input").click(function () {
+                //所有div有id的元素选择
+//                $("div[id]").css("background","red");
+
+                //所有div的id等于
+                //$("div[id='test']").css("background","red");
+
+                //以字符开头的
+                //$("div[id^='t']").css("background","red");
+
+                //以字符结尾
+//                $("div[id$='0']").css(
+//                        {
+//                            background: "red"
+//                        }
+//                );
+
+                //以包含特定字符
+//                $("div[id*='div']").css(
+//                        {
+//                            background: "red"
+//                        }
+//                );
+
+                //符合选择器(选择div有id和class包含div字符)
+                $("div[id][class*='div']").css("background","red");
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+    <div id="div" class="div-1">这是div</div>
+    <div id="test">这是div1</div>
+    <div id="div0">这是div2</div>
+    <input type="button" value="点击我">
+</body>
+</html>
