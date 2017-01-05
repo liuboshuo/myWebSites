@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushuo.dev.serachpic_pro.mapper.SPRegisterMapper">
+
+	<select id="insertUser" parameterType="SPUser">
+
+		INSERT INTO _user_ (userName,pwd,deviceId,userType,user_profile,userId,phone,email) VALUES (
+
+		#{userName},
+		#{pwd},
+		#{deviceId},
+		#{userType},
+		#{user_profile},
+		#{userId},
+		#{phone},
+		#{email}
+
+
+		);
+
+	</select>
+
+</mapper>

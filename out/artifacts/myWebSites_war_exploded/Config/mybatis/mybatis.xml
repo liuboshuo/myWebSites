@@ -12,8 +12,14 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<package name="com.liushuo.myDemo.pojo"/>
 		<package name="com.liushuo.myDemo.qo"/>
-		<package name="com.liushuo.dev.pojo"/>
-		<package name="com.liushuo.dev.qo"/>
+
+		<!--first-->
+		<package name="com.liushuo.dev.first.pojo"/>
+		<package name="com.liushuo.dev.first.qo"/>
+
+		<!--图片搜索-->
+		<package name="com.liushuo.dev.serachpic_pro.pojo" />
+		<package name="com.liushuo.dev.serachpic_pro.vo"/>
 	</typeAliases>
 	
 	<!-- 

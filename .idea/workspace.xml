@@ -2,37 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790412a7-a4c0-43e7-889d-cd4bf168db49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/calendar.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/error.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/header_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/reg_succ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/success.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/ui_header_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/img/ui_white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_444444_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_555555_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_777620_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_777777_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_cc0000_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/images/ui-icons_ffffff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/uEditor/img/customIcons.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/css/cssReset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery-migrate-1.2.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/jquery-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/jquery.ui/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/uEditor/uEditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/uEditor/uEditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/uEditor/uEditorContent.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/controller/SPregisterController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/mapper/SPLoginMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/mapper/SPLoginMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/mapper/SPRegisterMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/mapper/SPRegisterMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/pojo/SPUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/service/SPLoginService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/service/SPRegisterService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/service/impl/SPLoginServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/service/impl/SPRegisterServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/ng-repeat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/searchpic_pro/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/css/cssReset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/MD5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/angular.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Dev/css/cssReset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/WEB-INF/classes/com/liushuo/dev/mapper/NovelMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/WEB-INF/classes/com/liushuo/dev/mapper/PictureMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/WEB-INF/classes/com/liushuo/dev/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myWebSites/com/liushuo/dev/mapper/NovelMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myWebSites/com/liushuo/dev/mapper/PictureMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myWebSites/com/liushuo/dev/mapper/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/vo/CommonListVo.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/controller/NovelController.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/controller/NovelController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/controller/PictureController.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/controller/PictureController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/controller/UserController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/controller/serachpic_pro/SPRouteController.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/serachpic_pro/controller/SPRouteController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/NovelMapper.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/NovelMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/NovelMapper.xml" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/NovelMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/PictureMapper.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/PictureMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/PictureMapper.xml" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/PictureMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/mapper/UserMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/pojo/Directory.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/pojo/Directory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/pojo/Novel.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/pojo/Novel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/pojo/Picture.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/pojo/Picture.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/pojo/User.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/pojo/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/qo/BasePageQo.java" afterPath="$PROJECT_DIR$/src/com/liushuo/common/BasePageQo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/qo/NovelQo.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/qo/NovelQo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/qo/PageQo.java" afterPath="$PROJECT_DIR$/src/com/liushuo/common/PageQo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/qo/PictureQo.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/qo/PictureQo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/qo/UserAllQo.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/qo/UserAllQo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/NovelService.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/NovelService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/PictureService.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/PictureService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/impl/NovelServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/impl/NovelServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/impl/PictrueServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/impl/PictrueServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/liushuo/dev/first/service/impl/UserServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/vo/base/Base.java" afterPath="$PROJECT_DIR$/src/com/liushuo/common/Base.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/vo/base/BaseStatus.java" afterPath="$PROJECT_DIR$/src/com/liushuo/common/BaseStatus.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/liushuo/dev/vo/base/ResultData.java" afterPath="$PROJECT_DIR$/src/com/liushuo/common/ResultData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/Dev/css/cssReset.css" afterPath="$PROJECT_DIR$/web/Dev/searchpic_pro/css/cssReset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/db.properties" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/db.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/mybatis/mybatis.xml" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/mybatis/mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/spring/spring_config.xml" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/spring/spring_config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/spring/springmvc.xml" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Config/spring/springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Dev/searchpic_pro/index.html" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Dev/searchpic_pro/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Dev/zhiwen/index.html" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Dev/zhiwen/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java" afterPath="$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Config/db.properties" afterPath="$PROJECT_DIR$/web/Config/db.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Config/mybatis/mybatis.xml" afterPath="$PROJECT_DIR$/web/Config/mybatis/mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Config/spring/spring_config.xml" afterPath="$PROJECT_DIR$/web/Config/spring/spring_config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Config/spring/springmvc.xml" afterPath="$PROJECT_DIR$/web/Config/spring/springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Dev/searchpic_pro/index.html" afterPath="$PROJECT_DIR$/web/Dev/searchpic_pro/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Dev/zhiwen/index.html" afterPath="$PROJECT_DIR$/web/Dev/zhiwen/index.html" />
     </list>
     <ignored path="myWebSites.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,34 +96,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="144">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/css/index.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/js/index.js">
+      <file leaf-file-name="angular.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Res/angular.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cssReset.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/css/cssReset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Config/spring/springmvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/Config/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,8 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/Config/mybatis/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/service/impl/UserServiceImpl1.java" />
         <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/mapper/UserMapper1.xml" />
         <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/vo/base/ResultData.java" />
@@ -126,7 +233,6 @@
         <option value="$PROJECT_DIR$/web/Demo/yun-pc/css/global.css" />
         <option value="$PROJECT_DIR$/web/Demo/yun-pc/index.html" />
         <option value="$PROJECT_DIR$/web/Demo/yun-pc/test.html" />
-        <option value="$PROJECT_DIR$/web/Config/db.properties" />
         <option value="$PROJECT_DIR$/web/Demo/html/Object1.html" />
         <option value="$PROJECT_DIR$/web/Demo/html/点击放大.html" />
         <option value="$PROJECT_DIR$/web/Demo/html/简单版计算器.html" />
@@ -155,17 +261,20 @@
         <option value="$PROJECT_DIR$/web/Config/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/web/Demo/html/jq/eval.html" />
         <option value="$PROJECT_DIR$/web/Demo/html/eval.html" />
-        <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/web/Demo/html/jq/ajax_1.html" />
         <option value="$PROJECT_DIR$/web/Demo/html/jq/ajax_2.html" />
         <option value="$PROJECT_DIR$/web/Res/jquery.validate.messages_cn.js" />
         <option value="$PROJECT_DIR$/web/Demo/html/jq/validate.html" />
         <option value="$PROJECT_DIR$/web/Dev/zhi/index.html" />
         <option value="$PROJECT_DIR$/web/Dev/zhi/js/index.js" />
-        <option value="$PROJECT_DIR$/web/Dev/searchpic_pro/index.html" />
         <option value="$PROJECT_DIR$/web/Dev/zhiwen/js/index.js" />
         <option value="$PROJECT_DIR$/web/Dev/zhiwen/css/index.css" />
+        <option value="$PROJECT_DIR$/src/common/Base.java" />
+        <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/common/Base.java" />
+        <option value="$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java" />
         <option value="$PROJECT_DIR$/web/Dev/zhiwen/index.html" />
+        <option value="$PROJECT_DIR$/web/Dev/searchpic_pro/index.html" />
+        <option value="$PROJECT_DIR$/web/Config/db.properties" />
       </list>
     </option>
   </component>
@@ -222,9 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,15 +373,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiwen" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,68 +387,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dev" />
+              <option name="myItemId" value="liushuo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,12 +418,12 @@
     <property name="SearchEverywhereHistoryKey" value="index.html&#9;FILE&#9;file:///Users/liushuo/Desktop/java/myDemo/myWebSites/web/Demo/html/index.html" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/Dev/zhiwen" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/Dev/searchpic_pro/css" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/src/com/liushuo/dev/controller" />
+      <recent name="$PROJECT_DIR$/web/Demo/html/jq" />
       <recent name="$PROJECT_DIR$/web/Res" />
-      <recent name="$PROJECT_DIR$/web/Res/jquery.ui" />
-      <recent name="$PROJECT_DIR$/web/Dev" />
-      <recent name="$PROJECT_DIR$/web/Demo/images" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.liushuo.controller.jsp" />
@@ -383,12 +432,12 @@
       <recent name="com.liushuo.qo" />
       <recent name="com.liushuo.pojo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/src/com/liushuo/dev/controller" />
-      <recent name="$PROJECT_DIR$/web/Demo/html/jq" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/Dev/searchpic_pro" />
+      <recent name="$PROJECT_DIR$/web/Demo" />
+      <recent name="$PROJECT_DIR$/web/Dev/zhiwen/css" />
       <recent name="$PROJECT_DIR$/web/Res" />
-      <recent name="$PROJECT_DIR$/web/Demo/html" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat8">
@@ -1169,11 +1218,12 @@
       <workItem from="1483014441851" duration="1021000" />
       <workItem from="1483161823987" duration="6315000" />
       <workItem from="1483243279706" duration="1158000" />
+      <workItem from="1483618651871" duration="1379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125663000" />
+    <option name="totallyTimeSpent" value="127042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1186,7 +1236,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1197,20 +1247,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4985955" sideWeight="0.10586552" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32592592" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935026" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41654572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740742" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740742" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36194563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24943988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.89413446" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946298" sideWeight="0.89413446" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1242,63 +1292,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/定时器练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/点击放大.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/星星.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/controller/jsp/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/jq/滚动公告.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/eventObject.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/controller/jsp/TestController1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Software/Lib/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
     <entry file="file://$PROJECT_DIR$/src/com/liushuo/dev/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-36">
@@ -1326,13 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Config/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1375,13 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1456,13 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Res/jquery.form.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1477,7 +1449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Dev/css/cssReset.css">
+    <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/css/cssReset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -1561,14 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="28" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
@@ -1584,6 +1548,112 @@
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/common/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/liushuo/common/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/liushuo/dev/first/qo/NovelQo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/liushuo/myDemo/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Res/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/css/cssReset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Dev/zhiwen/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Dev/searchpic_pro/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

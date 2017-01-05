@@ -1,9 +1,7 @@
 package com.liushuo.myDemo.controller;
 
-import com.liushuo.dev.pojo.User;
-import com.liushuo.dev.vo.base.Base;
-import com.liushuo.dev.vo.base.BaseStatus;
-import com.liushuo.dev.vo.base.ResultData;
+import com.liushuo.common.ResultData;
+import com.liushuo.dev.first.pojo.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

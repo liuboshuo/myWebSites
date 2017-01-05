@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery插件使用</title>
+    <link rel="stylesheet" type="text/css" href="../../Demo/css/cssReset.css">
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.messages_cn.js"></script>
+    <script type="text/javascript" src="../../Res/MD5.js"></script>
+    <style>
+
+        .sp_header{
+            width: 70%;
+            height: 40px;
+            background: #ff6400;
+            margin: 0 auto;
+        }
+
+        .sp_center{
+            width: 70%;
+            margin: 0 auto;
+            background:  url("../../Demo/yun-pc/images/banner01.jpg") no-repeat top center;
+            padding: 6% 0;
+        }
+
+        #form {
+            margin-left: 65%;
+            /*margin-top: 6%;*/
+            width:30%;
+            box-shadow: 1px 1px 5px #888888;
+            padding: 10px 0;
+        }
+        #form > div > div {
+            margin-left: 5%;
+            height: 60px;
+            line-height: 45px;
+            position: relative;
+        }
+        #form > div > div > span {
+            font-size: 16px;
+            line-height: 40px;
+            color: #ff0000;
+        }
+        #form .form-submit{
+            display: block;
+            width: 92%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: orchid;
+            border: 1px solid orchid;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        #form .form-con{
+            width: 90%;
+            height: 30px;
+            line-height: 30px;
+        }
+        #form input[type='button']{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+        }
+        #form label{
+            position: absolute;
+            color: red;
+            font-size: 6px;
+            top: 29px;
+            left: 0px;
+        }
+        #form .div_register{
+            font-size: 30px;
+            opacity: 0.6;
+            text-align: center;
+        }
+
+        #form .form_waiting{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <script>
+        $(function(){
+
+
+            $("form").validate({
+
+                submitHandler: function(){
+
+                    $(".form-submit").attr("disabled",true);
+
+                    $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                    //发送请求
+                    $.ajax({
+                        url:"user_register",
+                        type : "post",
+                        data:$("#form").serialize(),
+                        dataType:"json",
+                        success: function () {
+
+                            $(".form-submit").attr("disabled",false);
+                            $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                        },
+                        error:function () {
+                            $(".form-submit").attr("disabled",false);
+                            $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                        }
+
+
+                    });
+
+                }
+
+            });
+
+//            $(".form-submit").click(function(){
+//
+//                var result = $("form").validate();
+//
+//                window.console.log(result.valid());
+//
+//                if(result.valid()){
+//
+//
+//                }
+//
+//
+//            });
+
+        });
+    </script>
+
+    <div class="sp_header">
+        <div>
+            <span>xxx</span>
+            <div><img /></div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="sp_center">
+
+        <form id="form">
+
+
+
+            <div class="div_register">注册</div>
+            <div>
+
+                <div>
+                    <input type="text"  class="required form-con" name="userName" placeholder="用户名" />
+                    <span>*</span>
+                </div>
+                <div>
+                    <input type="text" class="required email form-con" name="email" placeholder="邮箱"/>
+                    <span>*</span>
+                </div>
+                <div>
+                    <input type="text" class="form-con" name="phone" placeholder="手机号(可选)">
+                    <span></span>
+                </div>
+                <div>
+                    <input type="password" id="pwd" class="form-con" name="pwd" minlength="6" placeholder="密码" />
+                    <span>*</span>
+                </div>
+                <div>
+                    <input type="password"  class="form-con" name="confirmp" equalTo="#pwd" placeholder="确认密码" />
+                    <span>*</span>
+                </div>
+                <div class="div_submit">
+                    <button class="form-submit">
+                    <span>
+                        注册
+                    </span>
+                        <span class="form_waiting">
+                        请稍后...
+                    </span>
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <div class="sp_footer">
+        <div>
+            <span>xxx</span>
+            <div><img /></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

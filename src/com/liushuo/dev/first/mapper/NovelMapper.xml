@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liushuo.dev.first.mapper.NovelMapper">
+	<select id="testAllNovels" resultType="Novel">
+		select * from articles limit 0,10;
+	</select>
+	
+	<select id="getAllNovels" parameterType="NovelQo" resultType="Novel">
+		select *from articles
+		
+	 	<if test="@Utils.StringTool@isNotEmpty(novelId)">
+			where id = ${novelId}
+		</if> 
+		limit ${pageStart},${pageSize};
+	</select>
+	
+	<select id="getAllNovelsCount" resultType="int" parameterType="NovelQo">
+		select count(*) from articles
+		<if test="@Utils.StringTool@isNotEmpty(novelId)">
+			where id = ${novelId};
+		</if>
+	</select>
+</mapper>

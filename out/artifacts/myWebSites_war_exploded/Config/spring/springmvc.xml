@@ -18,7 +18,15 @@
 	
 
 	<context:component-scan base-package="com.liushuo.myDemo.controller"></context:component-scan>
-	<context:component-scan base-package="com.liushuo.dev.controller"></context:component-scan>
+
+
+	<!--first-->
+	<context:component-scan base-package="com.liushuo.dev.first.controller"></context:component-scan>
+
+	<!--图片搜索-->
+	<context:component-scan base-package="com.liushuo.dev.serachpic_pro.controller"></context:component-scan>
+
+
 	<mvc:default-servlet-handler/>
 
 	<mvc:annotation-driven>
