@@ -7,8 +7,7 @@ import com.liushuo.dev.serachpic_pro.pojo.SPUser;
  */
 public interface SPRegisterService {
 
-
+    public SPUser userIsExitts(SPUser user);
     public void register(SPUser user);
-
 
 }

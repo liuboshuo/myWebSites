@@ -7,7 +7,7 @@ import com.liushuo.dev.serachpic_pro.pojo.SPUser;
  */
 public interface SPRegisterMapper {
 
-
+    public SPUser userIsExitts(SPUser user);
     public void insertUser(SPUser user);
 
 }

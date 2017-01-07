@@ -1,5 +1,8 @@
 package Utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class StringTool {
 
 	
@@ -12,6 +15,18 @@ public class StringTool {
 		return !isEmpty(str);
 
 	}
-	
+
+	public StringTool() {
+	}
+
+	public static String createUnitId() {
+
+		int random = (int)Math.random();
+
+		SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
+
+		return df.format(new Date()) + random;
+
+	}
 	
 }

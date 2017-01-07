@@ -21,5 +21,8 @@ public class SPRegisterServiceImpl implements SPRegisterService {
         registerMapper.insertUser(user);
     }
 
+    public SPUser userIsExitts(SPUser user){
+        return registerMapper.userIsExitts(user);
+    }
 
 }

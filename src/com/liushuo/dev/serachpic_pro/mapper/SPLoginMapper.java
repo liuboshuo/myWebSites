@@ -7,7 +7,7 @@ import com.liushuo.dev.serachpic_pro.pojo.SPUser;
  */
 public interface SPLoginMapper {
 
-    public void sp_user_login(SPUser user);
+    public SPUser userIsExitts(SPUser user);
 
 }
 

@@ -22,4 +22,9 @@ public class SPRouteController {
 		return path+"register.html";
 	}
 
+	@RequestMapping("/login")
+	public String login(){
+
+		return path+"login.html";
+	}
 }
