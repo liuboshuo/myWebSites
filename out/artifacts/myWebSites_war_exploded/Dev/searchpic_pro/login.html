@@ -146,7 +146,7 @@
                 $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
                 //发送请求
                 $.ajax({
-                    url:"user_login",
+                    url:"/sp/user_login",
                     type : "post",
                     data:$("#login").serialize(),
                     dataType:"json",
