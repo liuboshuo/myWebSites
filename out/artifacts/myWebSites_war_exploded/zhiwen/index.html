@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>知问前端</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/cssReset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../../Res/jquery.ui/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../Res/uEditor/uEditor.css">
+
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../Res/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.messages_cn.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.form.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../Res/uEditor/uEditor.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="header_main">
+            <h1>知问</h1>
+            <div class="header_search">
+                <input type="text" name="search" class="search"/>
+            </div>
+            <div class="header_button">
+                <button class="search_button">查询</button>
+                <button class="question_button">搜索</button>
+            </div>
+            <div class="header_member">
+                <div>
+                    <a href="javascript:void(0)" id="reg_a">注册</a>
+                    | <a href="javascript:void(0)" id="#member_a">会员</a>
+                </div>
+                <!--|-->
+                <div>
+                    <!--<a href="javascript:void(0)">登录</a>-->
+                    <!--<a href="javascript:void(0)">退出</a>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reg" title="会员注册">
+        <p>
+            <label for="user">账号:</label>
+            <input type="text" name="user" id="user" class="text" title="请输入账号"/>
+            <span class="star">*</span>
+        </p>
+        <p>
+            <label for="pass">密码:</label>
+            <input type="password" name="pass" id="pass" class="text" title="请输入密码"/>
+            <span class="star">*</span>
+        </p>
+        <p>
+            <label for="email">邮箱:</label>
+            <input type="text" name="email" id="email" class="text" title="请输入邮箱"/>
+            <span class="star">*</span>
+        </p>
+        <p>
+            <label>性别:</label>
+            <input type="radio" name="sex" id="male"><label for="male">男</label></input><input type="radio" name="sex" id="female"><label for="female">女</label></input>
+        </p>
+        <p>
+            <label for="birthday">生日:</label>
+            <input type="text" name="birthday" readonly="readonly" id="birthday" class="text"/>
+        </p>
+    </div>
+
+</body>
+</html>

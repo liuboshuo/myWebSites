@@ -39,7 +39,7 @@ $(function () {
             delay:0,
             autoFocus: true,
             source: function(request,response) {
-
+                
                 var hosts = ["qq.com","163.com","sina.com.cn","gmail.com","hotmail.com"];
                 var term = request.term;
                 var name = term;
