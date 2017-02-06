@@ -100,3 +100,17 @@
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
     background: url("../img/ui_header_bg.png");
 }
+
+.ui-widget-header {
+    background: url("../img/ui_header_bg.png");
+}
+.ui-datepicker-today .ui-state-highlight {
+    border: 1px solid #eee;
+    color: #f60;
+}
+
+.ui-datepicker-current-day .ui-state-active {
+    border: 1px solid #eee;
+    color: #06f;
+}
+

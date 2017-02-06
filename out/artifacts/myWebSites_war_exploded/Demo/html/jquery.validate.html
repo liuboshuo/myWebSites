@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../Res/jquery.js"></script>
+    <script src="../../Res/jquery.validate.js"></script>
+    <script src="../../Res/jquery.validate.messages_cn.js"></script>
+    <style>
+        .valid{
+            background: url("../../zhiwen/img/reg_succ.png") no-repeat right;
+        }
+        .abc{
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        $(function () {
+
+            $("#form").validate({
+               rules:{
+                   user:{
+                       required:true,
+                       minlength:2
+                   },
+                   email:{
+                       required:true,
+                       email:true
+                   },
+                   url:{
+                       url:true
+                   },
+                   date:{
+                       date: true
+                   },
+                   dateISO:{
+                       dateISO : true
+                   },
+                   number:{
+                       number:true
+                   },
+
+                   notpass :{
+                       equalTo:"#pass"
+                   },
+                   min:{
+                       min: 5
+                   },
+                   max:{
+                       max: 5
+                   },
+                   range:{
+                       range: [5,10]
+                   },
+                   rangelength:{
+                       rangelength:[5,10]
+                   }
+               },
+               messages:{
+                   user:{
+                       required:"用户不可以空",
+                       minlength:"不可以小于2位"
+                   }
+               }
+           });
+
+            $.validator.setDefaults({
+                debug:true
+            });
+
+            $("#form1").validate({
+//                debug:true,
+                ignore:"#pass",
+
+                submitHandler: function (form) {
+                    alert(form);
+                },
+
+
+
+
+
+//                groups:{
+//                    myerror:"user pass"
+//                },
+//                errorPlacement:function (error , element) {
+//                    $.each(error , function (index ,value) {
+//                        $(".myerror").html($(value).html()+$(".myerror").html());
+//                    })
+//                },
+//                groups:{
+//                    error_user:"user",
+//                    error_pass: "pass",
+//                },
+
+//                errorPlacement:function (error , element) {
+//                    error.appendTo(".myerror")
+//                },
+
+//                errorClass:"errorPlacement",
+//                errorElement:"p",
+
+//
+//                errorLabelContainer:"ol.myerror",
+//                wrapper : "li",
+
+                success:"abc",
+
+                success:function(label){
+//                    $("label")
+                    label.addClass("abc").text("ok");
+                },
+
+                rules:{
+                    user: {
+                        required: true,
+//                        minlength: 2,
+                        rangelength:[2,10]
+                    },
+                    pass: {
+                        required: true,
+                        minlength: 6
+                    }
+                },
+                messages:{
+                    user:{
+                        required:"用户不可以空",
+//                        minlength:jQuery.format("不可以小于{0}位")
+                        rangelength: "{0}-{1}位"
+                    },
+                    pass:{
+                        required:"密码不可以空",
+                        minlength:jQuery.format("密码不可以小于{0}位")
+                    }
+                 }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!--<form  id="form" action="123.html">-->
+
+        <!--<p>用户：<input type="text" name="user"></p>-->
+        <!--<p>邮箱：<input type="text" name="email"></p>-->
+        <!--<p>网址：<input type="text" name="url"></p>-->
+
+        <!--<p>日期：<input type="text" name="date"></p>-->
+        <!--<p>日期：<input type="text" name="dateISO"></p>-->
+        <!--<p>数字：<input type="text" name="number"></p>-->
+
+        <!--<p>密码：<input type="text" name="pass" id="pass"></p>-->
+        <!--<p>确认：<input type="text" name="notpass"></p>-->
+
+        <!--<p>不小于5：<input type="text" name="min"></p>-->
+        <!--<p>不大于5：<input type="text" name="max"></p>-->
+        <!--<p>5-10number：<input type="text" name="range"></p>-->
+        <!--<p>5-10位字符串：<input type="text" name="rangelength"></p>-->
+
+        <!--<p><input type="submit" name="user" value="提交"></p>-->
+
+
+    <!--</form>-->
+
+
+
+    <form  id="form1" action="123.html">
+        <ol class="myerror"></ol>
+        <p>用户：<input type="text" name="user"></p>
+        <p>密码：<input type="text" name="pass" id="pass"></p>
+        <p><input type="submit" name="user" value="提交"></p>
+
+
+    </form>
+
+</body>
+</html>
