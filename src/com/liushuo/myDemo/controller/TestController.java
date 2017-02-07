@@ -38,7 +38,7 @@ public class TestController {
     }
 
 
-    @RequestMapping(value = "ajax2",method = RequestMethod.GET)
+    @RequestMapping(value = "ajax2",method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity<?> getJson(){
         try {
@@ -61,6 +61,17 @@ public class TestController {
         list.add(user);
 
         list.add(user1);
+        return new ResponseEntity<ResultData<ArrayList<User>>>(new ResultData<ArrayList<User>>(list), HttpStatus.OK);
+    }
+    @RequestMapping(value = "form",method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<?> getFrom()
+    {
+        ArrayList list = new ArrayList();
+        User user = new User();
+        user.setUserName("test");
+        user.setPassword("testPwd");
+        list.add(user);
         return new ResponseEntity<ResultData<ArrayList<User>>>(new ResultData<ArrayList<User>>(list), HttpStatus.OK);
     }
 }

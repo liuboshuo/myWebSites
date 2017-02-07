@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../Res/jquery.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.form.js"></script>
+    <style>
+
+    </style>
+
+    <script>
+
+        //默认阻止了form表单提交
+
+        $(function () {
+
+            //        $("#reg").ajaxForm(function () {
+//            alert("response");
+//        });
+
+            $("#reg").submit(function () {
+                $(this).ajaxSubmit({
+                    url:'/test/form',
+                    target:'#box',
+                    type:'POST',
+                    dataType:"json",
+
+//                    clearForm:true,
+//                    resetForm:true,
+                    data: {
+                        aaa:'ee'
+                    },
+
+                    beforeSubmit:function (formData,jqForm , options) {
+//                        alert(options.url);
+//                        alert(jqForm.html());
+//                        alert(formData[0].name);
+//                        alert(formData[1].name);
+                        return true;
+                    },
+
+                    success: function (reponseText,statusText) {
+                        alert(reponseText + statusText);
+                    },
+
+                    error:function (reponseText,statusText) {
+                        alert(reponseText + statusText);
+                    }
+                });
+                return false;
+            })
+//            alert($('#reg').formSerialize());
+//            alert($('#reg #user').fieldSerialize());
+//            alert($('#reg #user').fieldValue());
+//            alert($('#reg').resetForm());
+            alert($('#reg #user').clearFields());
+        })
+
+
+    </script>
+</head>
+<body>
+
+    <div id="box"></div>
+
+
+    <form id="reg" method="post" action="/test/form">
+        <p class="myerror"></p>
+        <p>帐号：<input type="text" name="user" id="user" /></p>
+        <p>密码：<input type="text" name="pass" id="pass" /></p>
+        <p><input type="submit" value="提交" /></p>
+    </form>
+
+
+
+
+</body>
+</html>
