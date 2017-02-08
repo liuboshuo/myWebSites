@@ -126,3 +126,11 @@
 #reg ol li{
     height:20px;
 }
+#loading {
+    background: url("../img/loading.gif") no-repeat 20px center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 40px;
+    color: #eeeeee;
+}

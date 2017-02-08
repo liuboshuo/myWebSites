@@ -21,7 +21,7 @@
 
             $("#reg").submit(function () {
                 $(this).ajaxSubmit({
-                    url:'/test/form',
+                    url:'/zhiwen/form',
                     target:'#box',
                     type:'POST',
                     dataType:"json",
@@ -65,7 +65,7 @@
     <div id="box"></div>
 
 
-    <form id="reg" method="post" action="/test/form">
+    <form id="reg" method="post" action="/zhiwen/form">
         <p class="myerror"></p>
         <p>帐号：<input type="text" name="user" id="user" /></p>
         <p>密码：<input type="text" name="pass" id="pass" /></p>
