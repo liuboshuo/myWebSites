@@ -25,6 +25,7 @@ $(function () {
     $(".search_button").button();
 
     $(".question_button").button();
+
     $("#loading").dialog({
         autoOpen:false,
         modal:true,
