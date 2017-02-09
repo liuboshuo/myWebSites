@@ -65,25 +65,26 @@
     color: #555;
     font-size: 14px;
 }
-#reg {
+#reg , #login{
     padding: 10px 0 0 10px;
     margin: 0px;
 }
-#reg p{
+#reg p , #login p{
     margin: 10px 0;
     padding: 0px;
 }
 
-#reg label{
+#reg label, #login label{
+    display: inline-block;
     font-size: 14px;
     color: #666;
 }
-#reg .star{
-    color: maroon;
+#reg .star ,#login .star{
+    color: red;
     font-size: 14px;
 }
 
-#reg .text {
+#reg .text ,#login .text{
     border-radius: 2px;
     color: #666;
     width: 200px;
@@ -112,17 +113,17 @@
     border: 1px solid #eee;
     color: #06f;
 }
-#reg .succ{
+#reg .succ , #login .succ{
     display: inline-block;
     width:28px;
     background: url("../img/reg_succ.png") no-repeat;
 }
-#reg ol{
+#reg ol ,#login ol{
     margin: 0;
     padding:0 0 0 20px;
     color: maroon;
 }
-#reg ol li{
+#reg ol li ,#login ol li{
     height:20px;
 }
 #loading {
@@ -132,4 +133,10 @@
     line-height: 25px;
     text-indent: 40px;
     color: #000;
+}
+
+#expires {
+    margin: 0 2px 0 110px;
+    font-size: 10px;
+    position: relative;
 }

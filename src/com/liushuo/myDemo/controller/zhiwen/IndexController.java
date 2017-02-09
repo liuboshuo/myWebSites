@@ -37,6 +37,19 @@ public class IndexController {
         return new ResponseEntity<ResultData<ArrayList<User>>>(new ResultData<ArrayList<User>>(list), HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/userLogin",method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseEntity<?> userLogin(String login_user)
+    {
+        try {
+            Thread.sleep(1000);
+        } catch (Exception e) {
+
+        }
+        ArrayList list = new ArrayList();
+        return new ResponseEntity<ResultData<ArrayList<User>>>(new ResultData<ArrayList<User>>(list), HttpStatus.OK);
+    }
+
     @RequestMapping(value = "is_user",method = RequestMethod.POST)
     @ResponseBody
     public void userExits(String user,PrintWriter printWriter){

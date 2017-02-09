@@ -132,7 +132,93 @@ $(function () {
             }
         }
     });
+    $("#login").dialog({
+        autoOpen:false,
+        modal:true,
+        width:320,
+        height:280,
+        resizable:false,
+        buttons:{
+            "登录":function(){
+                $("#login").submit();
+            }
+        }
+    }).validate({
+        submitHandler: function (form) {
 
+            $(form).ajaxSubmit({
+                url:'/zhiwen/userLogin',
+                type:"POST",
+                beforeSubmit:function (formData,jqForm, options) {
+                    $("#loading").dialog('open');
+                    $("#login").dialog('widget').find("button").eq(1).button("disable");
+                },
+                success:function (responseText,statusText) {
+                    $("#loading").css("background",'url(../img/success.gif) no-repeat 20px center').html("成功...");
+                    $("#login").dialog('widget').find("button").eq(1).button("enable");
+                    if ($("#expires").is("checked")){
+                        $.cookie("user",$("#login_user").val(),{
+                            expires:7
+                        });
+                    }else{
+                        $.cookie("user",$("#login_user").val());
+                    }
+                    setTimeout(function () {
+                        $("#loading").css("background",'url(img/loading.gif)  no-repeat 20px center').html("数据交互中...");
+                        $("#loading").dialog('close');
+                        $("#login").dialog("close");
+                        $("#login span.star").html("*").removeClass("succ");
+                        $("#login").resetForm();
+                        refresh();
+                    },1000);
+                }
+            })
+
+        },
+        showErrors: function (errorMap , errorList) {
+            var errors = this.numberOfInvalids();
+            if (errors > 0){
+                $("#login").dialog('option',"height",errors * 20 + 280);
+            }else {
+                $("#login").dialog('option',"height",280);
+            }
+            this.defaultShowErrors();
+        },
+
+        highlight:function (element,errorClass) {
+            $(element).css("border","1px solid #630");
+            $(element).parent().find('span').html('*').removeClass("succ");
+        },
+        unhighlight:function (element,errorClass) {
+            $(element).css("border","1px solid #ccc");
+            $(element).parent().find("span").html('&nbsp').addClass("succ");
+        },
+        errorLabelContainer:'ol.login_error',
+        wrapper:'li',
+
+        rules:{
+            login_user:{
+                required:true,
+                minlength:2
+            },
+            login_pass:{
+                required:true,
+                minlength:6
+            }
+        },
+
+        messages:{
+            login_user:{
+                required:"账号不可以为空",
+                minlength:jQuery.format("账号不可以小于{0}位"),
+                remote:"账号已经被占用"
+            },
+            login_pass:{
+                required:"密码不可以为空",
+                minlength:jQuery.format("密码不可以小于{0}位")
+            }
+        }
+    });
     $("#birthday").datepicker({
         dateFormat:"yy-mm-dd",
         // dayNames:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],
@@ -202,6 +288,11 @@ $(function () {
 
     })
 
+    $("#login_a").click(function () {
+
+        $("#login").dialog('open');
+
+    })
 
 
 });
