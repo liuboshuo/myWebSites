@@ -4311,7 +4311,7 @@ var uniqueId = $.fn.extend( {
 //>>demos: http://jqueryui.com/accordion/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/accordion.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -4936,7 +4936,7 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 //>>demos: http://jqueryui.com/menu/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/menu.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -5591,7 +5591,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 //>>demos: http://jqueryui.com/autocomplete/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/autocomplete.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -6255,7 +6255,7 @@ var widgetsAutocomplete = $.ui.autocomplete;
 //>>demos: http://jqueryui.com/controlgroup/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/controlgroup.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 var controlgroupCornerRegex = /ui-corner-([a-z]){2,6}/g;
@@ -6541,7 +6541,7 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/button.css
 //>>css.structure: ../../themes/base/checkboxradio.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -6810,7 +6810,7 @@ var widgetsCheckboxradio = $.ui.checkboxradio;
 //>>demos: http://jqueryui.com/button/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/button.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -7178,7 +7178,7 @@ var widgetsButton = $.ui.button;
 //>>demos: http://jqueryui.com/datepicker/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/datepicker.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -10773,7 +10773,7 @@ var widgetsDraggable = $.ui.draggable;
 //>>demos: http://jqueryui.com/resizable/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/resizable.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -11957,7 +11957,7 @@ var widgetsResizable = $.ui.resizable;
 //>>demos: http://jqueryui.com/dialog/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/dialog.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -13355,7 +13355,7 @@ var widgetsDroppable = $.ui.droppable;
 //>>demos: http://jqueryui.com/progressbar/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/progressbar.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -13814,7 +13814,7 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 //>>demos: http://jqueryui.com/selectmenu/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/selectmenu.css, ../../themes/base/button.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -14478,7 +14478,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 //>>demos: http://jqueryui.com/slider/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/slider.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -16750,7 +16750,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 //>>demos: http://jqueryui.com/spinner/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/spinner.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -17308,7 +17308,7 @@ var widgetsSpinner = $.ui.spinner;
 //>>demos: http://jqueryui.com/tabs/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/tabs.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 
@@ -18214,7 +18214,7 @@ var widgetsTabs = $.ui.tabs;
 //>>demos: http://jqueryui.com/tooltip/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/tooltip.css
-//>>css.theme: ../../themes/base/theme.css
+//>>css.theme: ../../themes/base/theme.scss
 
 
 

@@ -25,6 +25,6 @@ public class SPRouteController {
 	@RequestMapping("/login")
 	public String login(){
 
-		return path+"login.html";
+		return path+"login.html.html";
 	}
 }

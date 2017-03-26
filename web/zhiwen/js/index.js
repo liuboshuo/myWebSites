@@ -132,7 +132,7 @@ $(function () {
             }
         }
     });
-    $("#login").dialog({
+    $("#login.html").dialog({
         autoOpen:false,
         modal:true,
         width:320,
@@ -140,7 +140,7 @@ $(function () {
         resizable:false,
         buttons:{
             "登录":function(){
-                $("#login").submit();
+                $("#login.html").submit();
             }
         }
     }).validate({
@@ -151,11 +151,11 @@ $(function () {
                 type:"POST",
                 beforeSubmit:function (formData,jqForm, options) {
                     $("#loading").dialog('open');
-                    $("#login").dialog('widget').find("button").eq(1).button("disable");
+                    $("#login.html").dialog('widget').find("button").eq(1).button("disable");
                 },
                 success:function (responseText,statusText) {
                     $("#loading").css("background",'url(../img/success.gif) no-repeat 20px center').html("成功...");
-                    $("#login").dialog('widget').find("button").eq(1).button("enable");
+                    $("#login.html").dialog('widget').find("button").eq(1).button("enable");
                     if ($("#expires").is("checked")){
                         $.cookie("user",$("#login_user").val(),{
                             expires:7
@@ -166,9 +166,9 @@ $(function () {
                     setTimeout(function () {
                         $("#loading").css("background",'url(img/loading.gif)  no-repeat 20px center').html("数据交互中...");
                         $("#loading").dialog('close');
-                        $("#login").dialog("close");
-                        $("#login span.star").html("*").removeClass("succ");
-                        $("#login").resetForm();
+                        $("#login.html").dialog("close");
+                        $("#login.html span.star").html("*").removeClass("succ");
+                        $("#login.html").resetForm();
                         refresh();
                     },1000);
                 }
@@ -178,9 +178,9 @@ $(function () {
         showErrors: function (errorMap , errorList) {
             var errors = this.numberOfInvalids();
             if (errors > 0){
-                $("#login").dialog('option',"height",errors * 20 + 280);
+                $("#login.html").dialog('option',"height",errors * 20 + 280);
             }else {
-                $("#login").dialog('option',"height",280);
+                $("#login.html").dialog('option',"height",280);
             }
             this.defaultShowErrors();
         },
@@ -290,7 +290,7 @@ $(function () {
 
     $("#login_a").click(function () {
 
-        $("#login").dialog('open');
+        $("#login.html").dialog('open');
 
     })
 

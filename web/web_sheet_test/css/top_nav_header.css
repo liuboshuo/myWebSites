@@ -1,0 +1,33 @@
+#top_nav_header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: darkorange;
+  height: 1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: 0.2px solid #eeeeee; }
+  #top_nav_header #nav_left_image {
+    margin: 0.15rem;
+    width: 0.7rem;
+    height: 0.7rem; }
+    #top_nav_header #nav_left_image img {
+      width: 0.7rem;
+      height: 0.7rem; }
+  #top_nav_header #nav_title {
+    flex: 1;
+    color: white;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem; }
+  #top_nav_header #nav_right {
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem; }
+
+/*# sourceMappingURL=top_nav_header.css.map */
