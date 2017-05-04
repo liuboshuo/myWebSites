@@ -2,8 +2,6 @@
  * Created by liushuo on 17/1/4.
  */
 
-
-
 var myApp = angular.module("myApp",[]);
 
 myApp.controller('phoneController',function( $scope ){

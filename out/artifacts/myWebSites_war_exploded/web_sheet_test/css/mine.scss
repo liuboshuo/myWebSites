@@ -1,0 +1,32 @@
+@import "theme";
+@import "flex";
+@import "footer";
+
+#container{
+  @include flexbox;
+  background-color: transparent;
+  @include flex-direction(column);
+  font-size:$fontSize;
+}
+
+#account_view{
+  height:4*$itemRowHeight;
+  background-color: orange;
+  @include flexbox;
+  align-items: center;
+  flex-direction: column;
+  #account_avator{
+    width: $itemRowHeight * 2;
+    height: $itemRowHeight * 2;
+    border-radius: $itemRowHeight;
+    border: 2px solid rgba(255,255,255,1);
+    margin-top: 51px;
+  }
+  #account_username{
+    color: white;
+    margin-top: 10px;
+    height: $itemRowHeight;
+    line-height: $itemRowHeight;
+    font-size: $fontSize + 0.06rem;
+  }
+}

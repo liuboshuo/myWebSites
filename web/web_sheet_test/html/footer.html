@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>底部</title>
+    <script src="../Lib/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/cssReset.css">
+    <script type="text/javascript" src="../Lib/jquery.js"></script>
+
+    <style>
+        #footer {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 1.3rem; }
+
+        .footer_item {
+            background-color: #e9e9e9;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            border-top: 1px solid #eeeeee;
+            flex: 1;
+            text-align: center;
+            font-size: 0.15rem;
+            color: #333; }
+        .footer_item div img {
+            width: 0.7rem;
+            height: 0.7rem; }
+        .footer_item div {
+            display: inline-block;
+            margin-top: 3px; }
+    </style>
+</head>
+<body>
+    <!--底部-->
+    <footer id="footer">
+        <div class="footer_item" load_html="yuyue.html">
+            <div><img src=""></div>
+            <div>预约</div>
+        </div>
+        <div class="footer_item" load_html="other.html">
+            <div><img src=""></div>
+            <div>预留</div>
+        </div>
+        <div class="footer_item" load_html="xifen.html">
+            <div><img src=""></div>
+            <div>吸粉</div>
+        </div>
+        <div class="footer_item" load_html="mine.html">
+            <div><img src=""></div>
+            <div>我的</div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/**
+ * Created by liushuo on 17/3/28.
+ */
+@import "theme";
+@import "flex";
+@import "footer";
+
+#top_search_out_view{
+    @include flexbox;
+    background-color: white;
+    height: $itemRowHeight;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#top_search_inner_view{
+    @include flexbox;
+    flex: 1;
+    //background-color: blueviolet;
+    justify-content: space-around;
+
+    #top_search_textField{
+        flex: 1;
+        @include flexbox;
+        input{
+            flex: 1;
+            margin: 0px 5px 0px 5px;
+            border: 0px solid rgba(0,0,0,0);
+            border-radius: 5px;
+            background-color: #e9e9e9;
+            text-indent: 5px;
+        }
+    }
+    #top_search_btn{
+        @include flexbox;
+        width: 2rem;
+        height: $itemRowHeight;
+        background-color: $applicatiionThemeColor;
+        margin-right: 5px;
+        border-radius: 5px;
+        p{
+            font-size: $fontSize + 0.1rem;
+            flex: 1;
+            text-align: center;
+            line-height: $itemRowHeight;
+        }
+    }
+}
+
+#map_content{
+
+}

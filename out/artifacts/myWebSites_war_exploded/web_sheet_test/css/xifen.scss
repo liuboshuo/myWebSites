@@ -1,0 +1,10 @@
+@import "theme";
+@import "flex";
+@import "footer";
+
+#container{
+  @include flexbox;
+  background-color: transparent;
+  @include flex-direction(column);
+  font-size:$fontSize;
+}

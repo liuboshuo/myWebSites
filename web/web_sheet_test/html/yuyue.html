@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="../Lib/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/cssReset.css">
+    <link rel="stylesheet" type="text/css" href="../css/yuyue.css">
+    <script type="text/javascript" src="../Lib/jquery.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wEXbA5OlId7jmGOsdoFsuinITD62d8pY"></script>
+
+    <!--<script type="text/javascript" src="../Lib/yuyue.js"></script>-->
+</head>
+<body onload="initSize()" onresize="initSize()">
+    <div id="container">
+        <div id="content">
+            <div id="top_search_out_view">
+                <div id="top_search_inner_view">
+                    <p id='top_search_textField'>
+                        <input type="text" placeholder="输入搜索门店"/>
+                    </p>
+                    <div id='top_search_btn'>
+                        <p>搜索门店</p>
+                    </div>
+                </div>
+            </div>
+            <div id="map_content">
+                测试
+            </div>
+        </div>
+        <!--底部-->
+        <footer id="footer">
+            <div class="footer_item" load_html="yuyue.html">
+                <div><img src=""></div>
+                <div>预约</div>
+            </div>
+            <div class="footer_item" load_html="xifen.html">
+                <div><img src=""></div>
+                <div>优惠活动</div>
+            </div>
+            <div class="footer_item" load_html="mine.html">
+                <div><img src=""></div>
+                <div>我的</div>
+            </div>
+            <div class="footer_item" load_html="other.html">
+                <div><img src=""></div>
+                <div>其它</div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(function () {
+            $(".footer_item").css("color","#333");
+            $($(".footer_item").get(0)).css("color","darkorange");
+            $(".footer_item").click(function () {
+                var url = $(this).attr("load_html");
+                window.location.href = url;
+            });
+
+            $("#top_search_btn").click(function () {
+                if($("#top_search_textField>input").val().length == 0){
+                    alert('请输入关键字');
+                    return
+                }
+                //跳转页面
+            })
+
+            //添加地图
+            var map = new BMap.Map("map_content");
+            var point = new BMap.Point(116.404, 39.915);
+            map.centerAndZoom(point, 15);
+            var location = new BMap.Geolocation();
+            location.getCurrentPosition(function (result) {
+                if (this.getStatus() == BMAP_STATUS_SUCCESS){
+                    var mk = new BMap.Marker(result.point);
+                    map.addOverlay(mk);
+                    map.panTo(result.point);
+                }
+            },{enableHighAccuracy: true});
+        })
+        function initSize() {
+            $("#container").height($(window).height());
+            $('#content').height($(window).height() - $('#footer').height());
+//            alert($(window).height() - $('#footer').height() - $('#top_search_out_view').height());
+            $('#map_content').height($(window).height() - $('#footer').height() - $('#top_search_out_view').height());
+        }
+    </script>
+</body>
+</html>
