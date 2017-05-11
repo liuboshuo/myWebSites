@@ -21,4 +21,3 @@ myApp.controller('phoneController',function( $scope ){
 
     $scope.orderModel = "description";
     });
-
