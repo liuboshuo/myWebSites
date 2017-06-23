@@ -52,21 +52,21 @@
                 message, i;
 
             message = prefix + template.replace(/\{\d+\}/g, function (match) {
-                    var index = +match.slice(1, -1), arg;
+                var index = +match.slice(1, -1), arg;
 
-                    if (index + 2 < templateArgs.length) {
-                        arg = templateArgs[index + 2];
-                        if (typeof arg === 'function') {
-                            return arg.toString().replace(/ ?\{[\s\S]*$/, '');
-                        } else if (typeof arg === 'undefined') {
-                            return 'undefined';
-                        } else if (typeof arg !== 'string') {
-                            return toJson(arg);
-                        }
-                        return arg;
+                if (index + 2 < templateArgs.length) {
+                    arg = templateArgs[index + 2];
+                    if (typeof arg === 'function') {
+                        return arg.toString().replace(/ ?\{[\s\S]*$/, '');
+                    } else if (typeof arg === 'undefined') {
+                        return 'undefined';
+                    } else if (typeof arg !== 'string') {
+                        return toJson(arg);
                     }
-                    return match;
-                });
+                    return arg;
+                }
+                return match;
+            });
 
             message = message + '\nhttp://errors.angularjs.org/1.2.10/' +
                 (module ? module + '/' : '') + code;
@@ -213,7 +213,7 @@
 
 
     var /** holds major version number for IE or NaN for real browsers */
-        msie,
+            msie,
         jqLite,           // delay binding since jQuery could be loaded after us.
         jQuery,           // delay binding
         slice             = [].slice,
@@ -224,7 +224,7 @@
 
         _angular          = window.angular,
         /** @name angular */
-        angular           = window.angular || (window.angular = {}),
+            angular           = window.angular || (window.angular = {}),
         angularModule,
         nodeName_,
         uid               = ['0', '0', '0'];
@@ -648,8 +648,8 @@
      */
     function isElement(node) {
         return !!(node &&
-        (node.nodeName  // we are a direct element
-        || (node.on && node.find)));  // we have an on and find method part of jQuery API
+            (node.nodeName  // we are a direct element
+                || (node.on && node.find)));  // we have an on and find method part of jQuery API
     }
 
     /**
@@ -932,7 +932,7 @@
     function csp() {
         return (document.securityPolicy && document.securityPolicy.isActive) ||
             (document.querySelector &&
-            !!(document.querySelector('[ng-csp]') || document.querySelector('[data-ng-csp]')));
+                !!(document.querySelector('[ng-csp]') || document.querySelector('[data-ng-csp]')));
     }
 
 
@@ -1066,8 +1066,8 @@
         try {
             return element[0].nodeType === TEXT_NODE ? lowercase(elemHtml) :
                 elemHtml.
-                match(/^(<[^>]+>)/)[1].
-                replace(/^<([\w\-]+)/, function(match, nodeName) { return '<' + lowercase(nodeName); });
+                    match(/^(<[^>]+>)/)[1].
+                    replace(/^<([\w\-]+)/, function(match, nodeName) { return '<' + lowercase(nodeName); });
         } catch(e) {
             return lowercase(elemHtml);
         }
@@ -1149,9 +1149,9 @@
      */
     function encodeUriSegment(val) {
         return encodeUriQuery(val, true).
-        replace(/%26/gi, '&').
-        replace(/%3D/gi, '=').
-        replace(/%2B/gi, '+');
+            replace(/%26/gi, '&').
+            replace(/%3D/gi, '=').
+            replace(/%2B/gi, '+');
     }
 
 
@@ -1168,11 +1168,11 @@
      */
     function encodeUriQuery(val, pctEncodeSpaces) {
         return encodeURIComponent(val).
-        replace(/%40/gi, '@').
-        replace(/%3A/gi, ':').
-        replace(/%24/g, '$').
-        replace(/%2C/gi, ',').
-        replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'));
+            replace(/%40/gi, '@').
+            replace(/%3A/gi, ':').
+            replace(/%24/g, '$').
+            replace(/%2C/gi, ',').
+            replace(/%20/g, (pctEncodeSpaces ? '%20' : '+'));
     }
 
 
@@ -1887,50 +1887,50 @@
                     $$sanitizeUri: $$SanitizeUriProvider
                 });
                 $provide.provider('$compile', $CompileProvider).
-                directive({
-                    a: htmlAnchorDirective,
-                    input: inputDirective,
-                    textarea: inputDirective,
-                    form: formDirective,
-                    script: scriptDirective,
-                    select: selectDirective,
-                    style: styleDirective,
-                    option: optionDirective,
-                    ngBind: ngBindDirective,
-                    ngBindHtml: ngBindHtmlDirective,
-                    ngBindTemplate: ngBindTemplateDirective,
-                    ngClass: ngClassDirective,
-                    ngClassEven: ngClassEvenDirective,
-                    ngClassOdd: ngClassOddDirective,
-                    ngCloak: ngCloakDirective,
-                    ngController: ngControllerDirective,
-                    ngForm: ngFormDirective,
-                    ngHide: ngHideDirective,
-                    ngIf: ngIfDirective,
-                    ngInclude: ngIncludeDirective,
-                    ngInit: ngInitDirective,
-                    ngNonBindable: ngNonBindableDirective,
-                    ngPluralize: ngPluralizeDirective,
-                    ngRepeat: ngRepeatDirective,
-                    ngShow: ngShowDirective,
-                    ngStyle: ngStyleDirective,
-                    ngSwitch: ngSwitchDirective,
-                    ngSwitchWhen: ngSwitchWhenDirective,
-                    ngSwitchDefault: ngSwitchDefaultDirective,
-                    ngOptions: ngOptionsDirective,
-                    ngTransclude: ngTranscludeDirective,
-                    ngModel: ngModelDirective,
-                    ngList: ngListDirective,
-                    ngChange: ngChangeDirective,
-                    required: requiredDirective,
-                    ngRequired: requiredDirective,
-                    ngValue: ngValueDirective
-                }).
-                directive({
-                    ngInclude: ngIncludeFillContentDirective
-                }).
-                directive(ngAttributeAliasDirectives).
-                directive(ngEventDirectives);
+                    directive({
+                        a: htmlAnchorDirective,
+                        input: inputDirective,
+                        textarea: inputDirective,
+                        form: formDirective,
+                        script: scriptDirective,
+                        select: selectDirective,
+                        style: styleDirective,
+                        option: optionDirective,
+                        ngBind: ngBindDirective,
+                        ngBindHtml: ngBindHtmlDirective,
+                        ngBindTemplate: ngBindTemplateDirective,
+                        ngClass: ngClassDirective,
+                        ngClassEven: ngClassEvenDirective,
+                        ngClassOdd: ngClassOddDirective,
+                        ngCloak: ngCloakDirective,
+                        ngController: ngControllerDirective,
+                        ngForm: ngFormDirective,
+                        ngHide: ngHideDirective,
+                        ngIf: ngIfDirective,
+                        ngInclude: ngIncludeDirective,
+                        ngInit: ngInitDirective,
+                        ngNonBindable: ngNonBindableDirective,
+                        ngPluralize: ngPluralizeDirective,
+                        ngRepeat: ngRepeatDirective,
+                        ngShow: ngShowDirective,
+                        ngStyle: ngStyleDirective,
+                        ngSwitch: ngSwitchDirective,
+                        ngSwitchWhen: ngSwitchWhenDirective,
+                        ngSwitchDefault: ngSwitchDefaultDirective,
+                        ngOptions: ngOptionsDirective,
+                        ngTransclude: ngTranscludeDirective,
+                        ngModel: ngModelDirective,
+                        ngList: ngListDirective,
+                        ngChange: ngChangeDirective,
+                        required: requiredDirective,
+                        ngRequired: requiredDirective,
+                        ngValue: ngValueDirective
+                    }).
+                    directive({
+                        ngInclude: ngIncludeFillContentDirective
+                    }).
+                    directive(ngAttributeAliasDirectives).
+                    directive(ngEventDirectives);
                 $provide.provider({
                     $anchorScroll: $AnchorScrollProvider,
                     $animate: $AnimateProvider,
@@ -2081,10 +2081,10 @@
      */
     function camelCase(name) {
         return name.
-        replace(SPECIAL_CHARS_REGEXP, function(_, separator, letter, offset) {
-            return offset ? letter.toUpperCase() : letter;
-        }).
-        replace(MOZ_HACK_REGEXP, 'Moz$1');
+            replace(SPECIAL_CHARS_REGEXP, function(_, separator, letter, offset) {
+                return offset ? letter.toUpperCase() : letter;
+            }).
+            replace(MOZ_HACK_REGEXP, 'Moz$1');
     }
 
 /////////////////////////////////////////////
@@ -2255,7 +2255,7 @@
     function jqLiteHasClass(element, selector) {
         if (!element.getAttribute) return false;
         return ((" " + (element.getAttribute('class') || '') + " ").replace(/[\n\t]/g, " ").
-        indexOf( " " + selector + " " ) > -1);
+            indexOf( " " + selector + " " ) > -1);
     }
 
     function jqLiteRemoveClass(element, cssClasses) {
@@ -2455,7 +2455,7 @@
                     }
                 } else {
                     return (element[name] ||
-                    (element.attributes.getNamedItem(name)|| noop).specified)
+                        (element.attributes.getNamedItem(name)|| noop).specified)
                         ? lowercasedName
                         : undefined;
                 }
@@ -2661,8 +2661,8 @@
                                 var adown = a.nodeType === 9 ? a.documentElement : a,
                                     bup = b && b.parentNode;
                                 return a === bup || !!( bup && bup.nodeType === 1 && (
-                                        adown.contains ?
-                                            adown.contains( bup ) :
+                                    adown.contains ?
+                                        adown.contains( bup ) :
                                         a.compareDocumentPosition && a.compareDocumentPosition( bup ) & 16
                                     ));
                             } :
@@ -3412,11 +3412,11 @@
  *     var Ping = function() {
  *       this.$http = $http;
  *     };
- *
+ *   
  *     Ping.prototype.send = function() {
  *       return this.$http.get('/ping');
- *     };
- *
+ *     }; 
+ *   
  *     return Ping;
  *   }]);
      * </pre>
@@ -3762,7 +3762,7 @@
            // set the location.hash to the id of
            // the element you wish to scroll to.
            $location.hash('bottom');
-
+           
            // call $anchorScroll()
            $anchorScroll();
          }
@@ -4355,7 +4355,7 @@
                 } else {
                     if (isString(value)) {
                         cookieLength = (rawDocument.cookie = escape(name) + '=' + escape(value) +
-                                ';path=' + cookiePath).length + 1;
+                            ';path=' + cookiePath).length + 1;
 
                         // per http://www.ietf.org/rfc/rfc2109.txt browser must allow at minimum:
                         // - 300 cookies
@@ -5587,8 +5587,8 @@
                         }
 
                         childLinkFn = (nodeLinkFn && nodeLinkFn.terminal ||
-                        !(childNodes = nodeList[i].childNodes) ||
-                        !childNodes.length)
+                            !(childNodes = nodeList[i].childNodes) ||
+                            !childNodes.length)
                             ? null
                             : compileNodes(childNodes,
                             nodeLinkFn ? nodeLinkFn.transclude : transcludeFn);
@@ -6127,12 +6127,12 @@
                                             compare = function(a,b) { return a === b; };
                                         }
                                         parentSet = parentGet.assign || function() {
-                                                // reset the change, or we will throw this exception on every $digest
-                                                lastValue = isolateScope[scopeName] = parentGet(scope);
-                                                throw $compileMinErr('nonassign',
-                                                    "Expression '{0}' used with directive '{1}' is non-assignable!",
-                                                    attrs[attrName], newIsolateScopeDirective.name);
-                                            };
+                                            // reset the change, or we will throw this exception on every $digest
+                                            lastValue = isolateScope[scopeName] = parentGet(scope);
+                                            throw $compileMinErr('nonassign',
+                                                "Expression '{0}' used with directive '{1}' is non-assignable!",
+                                                attrs[attrName], newIsolateScopeDirective.name);
+                                        };
                                         lastValue = isolateScope[scopeName] = parentGet(scope);
                                         isolateScope.$watch(function parentValueWatch() {
                                             var parentValue = parentGet(scope);
@@ -6160,7 +6160,7 @@
                                     default:
                                         throw $compileMinErr('iscp',
                                             "Invalid isolate scope definition for directive '{0}'." +
-                                            " Definition: {... {1}: '{2}' ...}",
+                                                " Definition: {... {1}: '{2}' ...}",
                                             newIsolateScopeDirective.name, scopeName, definition);
                                 }
                             });
@@ -6341,7 +6341,7 @@
                         afterTemplateChildLinkFn,
                         beforeTemplateCompileNode = $compileNode[0],
                         origAsyncDirective = directives.shift(),
-                        // The fact that we have to copy and patch the directive seems wrong!
+                    // The fact that we have to copy and patch the directive seems wrong!
                         derivedSyncDirective = extend({}, origAsyncDirective, {
                             templateUrl: null, transclude: null, replace: null, $$originalDirective: origAsyncDirective
                         }),
@@ -6352,73 +6352,73 @@
                     $compileNode.empty();
 
                     $http.get($sce.getTrustedResourceUrl(templateUrl), {cache: $templateCache}).
-                    success(function(content) {
-                        var compileNode, tempTemplateAttrs, $template, childBoundTranscludeFn;
+                        success(function(content) {
+                            var compileNode, tempTemplateAttrs, $template, childBoundTranscludeFn;
 
-                        content = denormalizeTemplate(content);
+                            content = denormalizeTemplate(content);
 
-                        if (origAsyncDirective.replace) {
-                            $template = jqLite('<div>' + trim(content) + '</div>').contents();
-                            compileNode = $template[0];
+                            if (origAsyncDirective.replace) {
+                                $template = jqLite('<div>' + trim(content) + '</div>').contents();
+                                compileNode = $template[0];
 
-                            if ($template.length != 1 || compileNode.nodeType !== 1) {
-                                throw $compileMinErr('tplrt',
-                                    "Template for directive '{0}' must have exactly one root element. {1}",
-                                    origAsyncDirective.name, templateUrl);
-                            }
+                                if ($template.length != 1 || compileNode.nodeType !== 1) {
+                                    throw $compileMinErr('tplrt',
+                                        "Template for directive '{0}' must have exactly one root element. {1}",
+                                        origAsyncDirective.name, templateUrl);
+                                }
 
-                            tempTemplateAttrs = {$attr: {}};
-                            replaceWith($rootElement, $compileNode, compileNode);
-                            var templateDirectives = collectDirectives(compileNode, [], tempTemplateAttrs);
+                                tempTemplateAttrs = {$attr: {}};
+                                replaceWith($rootElement, $compileNode, compileNode);
+                                var templateDirectives = collectDirectives(compileNode, [], tempTemplateAttrs);
 
-                            if (isObject(origAsyncDirective.scope)) {
-                                markDirectivesAsIsolate(templateDirectives);
-                            }
-                            directives = templateDirectives.concat(directives);
-                            mergeTemplateAttributes(tAttrs, tempTemplateAttrs);
-                        } else {
-                            compileNode = beforeTemplateCompileNode;
-                            $compileNode.html(content);
-                        }
-
-                        directives.unshift(derivedSyncDirective);
-
-                        afterTemplateNodeLinkFn = applyDirectivesToNode(directives, compileNode, tAttrs,
-                            childTranscludeFn, $compileNode, origAsyncDirective, preLinkFns, postLinkFns,
-                            previousCompileContext);
-                        forEach($rootElement, function(node, i) {
-                            if (node == compileNode) {
-                                $rootElement[i] = $compileNode[0];
-                            }
-                        });
-                        afterTemplateChildLinkFn = compileNodes($compileNode[0].childNodes, childTranscludeFn);
-
-
-                        while(linkQueue.length) {
-                            var scope = linkQueue.shift(),
-                                beforeTemplateLinkNode = linkQueue.shift(),
-                                linkRootElement = linkQueue.shift(),
-                                boundTranscludeFn = linkQueue.shift(),
-                                linkNode = $compileNode[0];
-
-                            if (beforeTemplateLinkNode !== beforeTemplateCompileNode) {
-                                // it was cloned therefore we have to clone as well.
-                                linkNode = jqLiteClone(compileNode);
-                                replaceWith(linkRootElement, jqLite(beforeTemplateLinkNode), linkNode);
-                            }
-                            if (afterTemplateNodeLinkFn.transclude) {
-                                childBoundTranscludeFn = createBoundTranscludeFn(scope, afterTemplateNodeLinkFn.transclude);
+                                if (isObject(origAsyncDirective.scope)) {
+                                    markDirectivesAsIsolate(templateDirectives);
+                                }
+                                directives = templateDirectives.concat(directives);
+                                mergeTemplateAttributes(tAttrs, tempTemplateAttrs);
                             } else {
-                                childBoundTranscludeFn = boundTranscludeFn;
+                                compileNode = beforeTemplateCompileNode;
+                                $compileNode.html(content);
                             }
-                            afterTemplateNodeLinkFn(afterTemplateChildLinkFn, scope, linkNode, $rootElement,
-                                childBoundTranscludeFn);
-                        }
-                        linkQueue = null;
-                    }).
-                    error(function(response, code, headers, config) {
-                        throw $compileMinErr('tpload', 'Failed to load template: {0}', config.url);
-                    });
+
+                            directives.unshift(derivedSyncDirective);
+
+                            afterTemplateNodeLinkFn = applyDirectivesToNode(directives, compileNode, tAttrs,
+                                childTranscludeFn, $compileNode, origAsyncDirective, preLinkFns, postLinkFns,
+                                previousCompileContext);
+                            forEach($rootElement, function(node, i) {
+                                if (node == compileNode) {
+                                    $rootElement[i] = $compileNode[0];
+                                }
+                            });
+                            afterTemplateChildLinkFn = compileNodes($compileNode[0].childNodes, childTranscludeFn);
+
+
+                            while(linkQueue.length) {
+                                var scope = linkQueue.shift(),
+                                    beforeTemplateLinkNode = linkQueue.shift(),
+                                    linkRootElement = linkQueue.shift(),
+                                    boundTranscludeFn = linkQueue.shift(),
+                                    linkNode = $compileNode[0];
+
+                                if (beforeTemplateLinkNode !== beforeTemplateCompileNode) {
+                                    // it was cloned therefore we have to clone as well.
+                                    linkNode = jqLiteClone(compileNode);
+                                    replaceWith(linkRootElement, jqLite(beforeTemplateLinkNode), linkNode);
+                                }
+                                if (afterTemplateNodeLinkFn.transclude) {
+                                    childBoundTranscludeFn = createBoundTranscludeFn(scope, afterTemplateNodeLinkFn.transclude);
+                                } else {
+                                    childBoundTranscludeFn = boundTranscludeFn;
+                                }
+                                afterTemplateNodeLinkFn(afterTemplateChildLinkFn, scope, linkNode, $rootElement,
+                                    childBoundTranscludeFn);
+                            }
+                            linkQueue = null;
+                        }).
+                        error(function(response, code, headers, config) {
+                            throw $compileMinErr('tpload', 'Failed to load template: {0}', config.url);
+                        });
 
                     return function delayedNodeLinkFn(ignoreChildLinkFn, scope, node, rootElement, boundTranscludeFn) {
                         if (linkQueue) {
@@ -6480,7 +6480,7 @@
                     if (attrNormalizedName == "xlinkHref" ||
                         (tag == "FORM" && attrNormalizedName == "action") ||
                         (tag != "IMG" && (attrNormalizedName == "src" ||
-                        attrNormalizedName == "ngSrc"))) {
+                            attrNormalizedName == "ngSrc"))) {
                         return $sce.RESOURCE_URL;
                     }
                 }
@@ -6509,7 +6509,7 @@
                                     if (EVENT_HANDLER_ATTR_REGEXP.test(name)) {
                                         throw $compileMinErr('nodomevents',
                                             "Interpolations for HTML DOM event attributes are disallowed.  Please use the " +
-                                            "ng- versions (such as ng-click instead of onclick) instead.");
+                                                "ng- versions (such as ng-click instead of onclick) instead.");
                                     }
 
                                     // we need to interpolate again, in case the attribute value has been updated
@@ -6525,19 +6525,19 @@
                                     attr[name] = interpolateFn(scope);
                                     ($$observers[name] || ($$observers[name] = [])).$$inter = true;
                                     (attr.$$observers && attr.$$observers[name].$$scope || scope).
-                                    $watch(interpolateFn, function interpolateFnWatchAction(newValue, oldValue) {
-                                        //special case for class attribute addition + removal
-                                        //so that class changes can tap into the animation
-                                        //hooks provided by the $animate service. Be sure to
-                                        //skip animations when the first digest occurs (when
-                                        //both the new and the old values are the same) since
-                                        //the CSS classes are the non-interpolated values
-                                        if(name === 'class' && newValue != oldValue) {
-                                            attr.$updateClass(newValue, oldValue);
-                                        } else {
-                                            attr.$set(name, newValue);
-                                        }
-                                    });
+                                        $watch(interpolateFn, function interpolateFnWatchAction(newValue, oldValue) {
+                                            //special case for class attribute addition + removal
+                                            //so that class changes can tap into the animation
+                                            //hooks provided by the $animate service. Be sure to
+                                            //skip animations when the first digest occurs (when
+                                            //both the new and the old values are the same) since
+                                            //the CSS classes are the non-interpolated values
+                                            if(name === 'class' && newValue != oldValue) {
+                                                attr.$updateClass(newValue, oldValue);
+                                            } else {
+                                                attr.$set(name, newValue);
+                                            }
+                                        });
                                 }
                             };
                         }
@@ -6668,7 +6668,7 @@
         /* NodeList */ nodeList,
         /* Element */ rootElement,
         /* function(Function) */ boundTranscludeFn
-    ){}
+        ){}
 
     function directiveLinkingFn(
         /* nodesetLinkingFn */ nodesetLinkingFn,
@@ -6676,7 +6676,7 @@
         /* Node */ node,
         /* Element */ rootElement,
         /* function(Function) */ boundTranscludeFn
-    ){}
+        ){}
 
     function tokenDifference(str1, str2) {
         var values = '',
@@ -8089,7 +8089,7 @@
          * @description
          * Symbol to denote start of expression in the interpolated string. Defaults to `{{`.
    *
-         * @param {string=} value new value to set the starting symbol to.
+   * @param {string=} value new value to set the starting symbol to.
          * @returns {string|self} Returns the symbol when used as getter and self if used as setter.
          */
         this.startSymbol = function(value){
@@ -8204,8 +8204,8 @@
                 if (trustedContext && parts.length > 1) {
                     throw $interpolateMinErr('noconcat',
                         "Error while interpolating: {0}\nStrict Contextual Escaping disallows " +
-                        "interpolations that concatenate multiple expressions when a trusted value is " +
-                        "required.  See http://docs.angularjs.org/api/ng.$sce", text);
+                            "interpolations that concatenate multiple expressions when a trusted value is " +
+                            "required.  See http://docs.angularjs.org/api/ng.$sce", text);
                 }
 
                 if (!mustHaveExpression  || hasInterpolation) {
@@ -9201,7 +9201,7 @@
 
                             $location.$$parse(newUrl);
                             if ($rootScope.$broadcast('$locationChangeStart', newUrl,
-                                    oldUrl).defaultPrevented) {
+                                oldUrl).defaultPrevented) {
                                 $location.$$parse(oldUrl);
                                 $browser.url(oldUrl);
                             } else {
@@ -9222,7 +9222,7 @@
                         changeCounter++;
                         $rootScope.$evalAsync(function() {
                             if ($rootScope.$broadcast('$locationChangeStart', $location.absUrl(), oldUrl).
-                                    defaultPrevented) {
+                                defaultPrevented) {
                                 $location.$$parse(oldUrl);
                             } else {
                                 $browser.url($location.absUrl(), currentReplace);
@@ -9460,12 +9460,12 @@
                     'Referencing Function in Angular expressions is disallowed! Expression: {0}',
                     fullExpression);
             } else if (// isWindow(obj)
-            obj.document && obj.location && obj.alert && obj.setInterval) {
+                obj.document && obj.location && obj.alert && obj.setInterval) {
                 throw $parseMinErr('isecwindow',
                     'Referencing the Window in Angular expressions is disallowed! Expression: {0}',
                     fullExpression);
             } else if (// isElement(obj)
-            obj.children && (obj.nodeName || (obj.on && obj.find))) {
+                obj.children && (obj.nodeName || (obj.on && obj.find))) {
                 throw $parseMinErr('isecdom',
                     'Referencing DOM nodes in Angular expressions is disallowed! Expression: {0}',
                     fullExpression);
@@ -9616,13 +9616,13 @@
         isWhitespace: function(ch) {
             // IE treats non-breaking space as \u00A0
             return (ch === ' ' || ch === '\r' || ch === '\t' ||
-            ch === '\n' || ch === '\v' || ch === '\u00A0');
+                ch === '\n' || ch === '\v' || ch === '\u00A0');
         },
 
         isIdent: function(ch) {
             return ('a' <= ch && ch <= 'z' ||
-            'A' <= ch && ch <= 'Z' ||
-            '_' === ch || ch === '$');
+                'A' <= ch && ch <= 'Z' ||
+                '_' === ch || ch === '$');
         },
 
         isExpOperator: function(ch) {
@@ -10269,8 +10269,8 @@
                 promiseWarning(fullExp);
                 if (!("$$v" in obj)) {
                     (function(promise) {
-                            promise.then(function(val) { promise.$$v = val; }); }
-                    )(obj);
+                        promise.then(function(val) { promise.$$v = val; }); }
+                        )(obj);
                 }
                 if (obj.$$v === undefined) {
                     obj.$$v = {};
@@ -10455,20 +10455,20 @@
                 ensureSafeMemberName(key, fullExp);
                 code += 'if(s == null) return undefined;\n' +
                     's='+ (index
-                        // we simply dereference 's' on any .dot notation
-                        ? 's'
-                        // but if we are first then we check locals first, and if so read it first
-                        : '((k&&k.hasOwnProperty("' + key + '"))?k:s)') + '["' + key + '"]' + ';\n' +
+                    // we simply dereference 's' on any .dot notation
+                    ? 's'
+                    // but if we are first then we check locals first, and if so read it first
+                    : '((k&&k.hasOwnProperty("' + key + '"))?k:s)') + '["' + key + '"]' + ';\n' +
                     (options.unwrapPromises
                         ? 'if (s && s.then) {\n' +
-                    ' pw("' + fullExp.replace(/(["\r\n])/g, '\\$1') + '");\n' +
-                    ' if (!("$$v" in s)) {\n' +
-                    ' p=s;\n' +
-                    ' p.$$v = undefined;\n' +
-                    ' p.then(function(v) {p.$$v=v;});\n' +
-                    '}\n' +
-                    ' s=s.$$v\n' +
-                    '}\n'
+                        ' pw("' + fullExp.replace(/(["\r\n])/g, '\\$1') + '");\n' +
+                        ' if (!("$$v" in s)) {\n' +
+                        ' p=s;\n' +
+                        ' p.$$v = undefined;\n' +
+                        ' p.then(function(v) {p.$$v=v;});\n' +
+                        '}\n' +
+                        ' s=s.$$v\n' +
+                        '}\n'
                         : '');
             });
             code += 'return s;';
@@ -11782,7 +11782,7 @@
                                                         !(watch.eq
                                                             ? equals(value, last)
                                                             : (typeof value == 'number' && typeof last == 'number'
-                                                        && isNaN(value) && isNaN(last)))) {
+                                                            && isNaN(value) && isNaN(last)))) {
                                                         dirty = true;
                                                         lastDirtyWatch = watch;
                                                         watch.last = watch.eq ? copy(value) : value;
@@ -11827,7 +11827,7 @@
                                 clearPhase();
                                 throw $rootScopeMinErr('infdig',
                                     '{0} $digest() iterations reached. Aborting!\n' +
-                                    'Watchers fired in the last 5 iterations: {1}',
+                                        'Watchers fired in the last 5 iterations: {1}',
                                     TTL, toJson(watchLog));
                             }
 
@@ -12372,7 +12372,7 @@
 // Prereq: s is a string.
     function escapeForRegexp(s) {
         return s.replace(/([-()\[\]{}+?*.$\^|,:#<!\\])/g, '\\$1').
-        replace(/\x08/g, '\\x08');
+            replace(/\x08/g, '\\x08');
     }
 
 
@@ -12389,8 +12389,8 @@
                     'Illegal sequence *** in string matcher.  String: {0}', matcher);
             }
             matcher = escapeForRegexp(matcher).
-            replace('\\*\\*', '.*').
-            replace('\\*', '[^:/.?&;]*');
+                replace('\\*\\*', '.*').
+                replace('\\*', '[^:/.?&;]*');
             return new RegExp('^' + matcher + '$');
         } else if (isRegExp(matcher)) {
             // The only other type of matcher allowed is a Regexp.
@@ -13090,8 +13090,8 @@
             if (enabled && $sniffer.msie && $sniffer.msieDocumentMode < 8) {
                 throw $sceMinErr('iequirks',
                     'Strict Contextual Escaping does not support Internet Explorer version < 9 in quirks ' +
-                    'mode.  You can fix this by adding the text <!doctype html> to the top of your HTML ' +
-                    'document.  See http://docs.angularjs.org/api/ng.$sce for more information.');
+                        'mode.  You can fix this by adding the text <!doctype html> to the top of your HTML ' +
+                        'document.  See http://docs.angularjs.org/api/ng.$sce for more information.');
             }
 
             var sce = copy(SCE_CONTEXTS);
@@ -13409,7 +13409,7 @@
              *      `context`.
              */
 
-                // Shorthand delegations.
+            // Shorthand delegations.
             var parse = sce.parseAs,
                 getTrusted = sce.getTrusted,
                 trustAs = sce.trustAs;
@@ -13497,8 +13497,8 @@
                 history: !!($window.history && $window.history.pushState && !(android < 4) && !boxee),
                 // jshint +W018
                 hashchange: 'onhashchange' in $window &&
-                // IE8 compatible mode lies
-                (!documentMode || documentMode > 7),
+                    // IE8 compatible mode lies
+                    (!documentMode || documentMode > 7),
                 hasEvent: function(event) {
                     // IE9 implements 'input' event it's so fubared that we rather pretend that it doesn't have
                     // it. In particular the event is not fired when backspace or delete key are pressed or
@@ -13708,7 +13708,7 @@
     function urlIsSameOrigin(requestUrl) {
         var parsed = (isString(requestUrl)) ? urlResolve(requestUrl) : requestUrl;
         return (parsed.protocol === originUrl.protocol &&
-        parsed.host === originUrl.host);
+            parsed.host === originUrl.host);
     }
 
     /**
@@ -14132,7 +14132,7 @@
         return function(amount, currencySymbol){
             if (isUndefined(currencySymbol)) currencySymbol = formats.CURRENCY_SYM;
             return formatNumber(amount, formats.PATTERNS[1], formats.GROUP_SEP, formats.DECIMAL_SEP, 2).
-            replace(/\u00A4/g, currencySymbol);
+                replace(/\u00A4/g, currencySymbol);
         };
     }
 
@@ -15294,8 +15294,8 @@
         function toggleValidCss(isValid, validationErrorKey) {
             validationErrorKey = validationErrorKey ? '-' + snake_case(validationErrorKey, '-') : '';
             element.
-            removeClass((isValid ? INVALID_CLASS : VALID_CLASS) + validationErrorKey).
-            addClass((isValid ? VALID_CLASS : INVALID_CLASS) + validationErrorKey);
+                removeClass((isValid ? INVALID_CLASS : VALID_CLASS) + validationErrorKey).
+                addClass((isValid ? VALID_CLASS : INVALID_CLASS) + validationErrorKey);
         }
 
         /**
@@ -16559,7 +16559,7 @@
             /**
              * @ngdoc function
              * @name { ng.directive:ngModel.NgModelController#$isEmpty
-             * @methodOf ng.directive:ngModel.NgModelController
+   * @methodOf ng.directive:ngModel.NgModelController
              *
              * @description
              * This is called when we need to determine if the value of the input is empty.
@@ -16588,8 +16588,8 @@
             function toggleValidCss(isValid, validationErrorKey) {
                 validationErrorKey = validationErrorKey ? '-' + snake_case(validationErrorKey, '-') : '';
                 $element.
-                removeClass((isValid ? INVALID_CLASS : VALID_CLASS) + validationErrorKey).
-                addClass((isValid ? VALID_CLASS : INVALID_CLASS) + validationErrorKey);
+                    removeClass((isValid ? INVALID_CLASS : VALID_CLASS) + validationErrorKey).
+                    addClass((isValid ? VALID_CLASS : INVALID_CLASS) + validationErrorKey);
             }
 
             /**
@@ -18548,8 +18548,8 @@
                                     currentScope.$emit('$includeContentLoaded');
                                     scope.$eval(onloadExp);
                                 }).error(function() {
-                                    if (thisChangeId === changeCounter) cleanupLastIncludeContent();
-                                });
+                                        if (thisChangeId === changeCounter) cleanupLastIncludeContent();
+                                    });
                                 scope.$emit('$includeContentRequested');
                             } else {
                                 cleanupLastIncludeContent();
@@ -19149,8 +19149,8 @@
                     var index, length,
                         previousNode = $element[0],     // current position of the node
                         nextNode,
-                        // Same as lastBlockMap but it has the current state. It will become the
-                        // lastBlockMap on the next iteration.
+                    // Same as lastBlockMap but it has the current state. It will become the
+                    // lastBlockMap on the next iteration.
                         nextBlockMap = {},
                         arrayLength,
                         childScope,
@@ -19878,8 +19878,8 @@
             if (!$transclude) {
                 throw minErr('ngTransclude')('orphan',
                     'Illegal use of ngTransclude directive in the template! ' +
-                    'No parent directive that requires a transclusion found. ' +
-                    'Element: {0}',
+                        'No parent directive that requires a transclusion found. ' +
+                        'Element: {0}',
                     startingTag($element));
             }
 
@@ -19937,7 +19937,7 @@
             compile: function(element, attr) {
                 if (attr.type == 'text/ng-template') {
                     var templateUrl = attr.id,
-                        // IE is not consistent, in scripts we have to read .text but in other nodes we have to read .textContent
+                    // IE is not consistent, in scripts we have to read .text but in other nodes we have to read .textContent
                         text = element[0].text;
 
                     $templateCache.put(templateUrl, text);
@@ -20157,8 +20157,8 @@
                     optionsExp = attr.ngOptions,
                     nullOption = false, // if false, user will not be able to select it (used by ngOptions)
                     emptyOption,
-                    // we can't just jqLite('<option>') since jqLite is not smart enough
-                    // to create it in <select> and IE barfs otherwise.
+                // we can't just jqLite('<option>') since jqLite is not smart enough
+                // to create it in <select> and IE barfs otherwise.
                     optionTemplate = jqLite(document.createElement('option')),
                     optGroupTemplate =jqLite(document.createElement('optgroup')),
                     unknownOption = optionTemplate.clone();
@@ -20251,8 +20251,8 @@
                     if (! (match = optionsExp.match(NG_OPTIONS_REGEXP))) {
                         throw ngOptionsMinErr('iexp',
                             "Expected expression in form of " +
-                            "'_select_ (as _label_)? for (_key_,)?_value_ in _collection_'" +
-                            " but got '{0}'. Element: {1}",
+                                "'_select_ (as _label_)? for (_key_,)?_value_ in _collection_'" +
+                                " but got '{0}'. Element: {1}",
                             optionsExp, startingTag(selectElement));
                     }
 
@@ -20264,10 +20264,10 @@
                         valuesFn = $parse(match[7]),
                         track = match[8],
                         trackFn = track ? $parse(match[8]) : null,
-                        // This is an array of array of existing option groups in DOM.
-                        // We try to reuse these if possible
-                        // - optionGroupsCache[0] is the options with no option group
-                        // - optionGroupsCache[?][0] is the parent: either the SELECT or OPTGROUP element
+                    // This is an array of array of existing option groups in DOM.
+                    // We try to reuse these if possible
+                    // - optionGroupsCache[0] is the options with no option group
+                    // - optionGroupsCache[?][0] is the parent: either the SELECT or OPTGROUP element
                         optionGroupsCache = [[{element: selectElement, label:''}]];
 
                     if (nullOption) {

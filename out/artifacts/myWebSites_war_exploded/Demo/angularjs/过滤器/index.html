@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../Res/bootstrap3/css/bootstrap.css">
+    <script src="../../../Res/angularjs.js"></script>
+    <script src="index.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="controller">
+
+    <p>
+        {{12312313123 | number}}
+    </p>
+
+    <p>
+        {{1231231.3123 | number:3}}
+    </p>
+
+    <p>
+        {{12.3 | currency:'rmb'}}
+    </p>
+
+    <p>
+        {{ today | date:'y-M-d h:m:s' }}
+    </p>
+    <p>
+        {{ today | date:'yyyy-MM-dd HH:mm:ss' }}
+    </p>
+
+    <p>
+        {{ [1,2,3,4,5] | limitTo:3}}
+    </p>
+
+
+    <p>
+        {{data | lowercase}}
+    </p>
+
+    <p>
+        {{data | uppercase}}
+    </p>
+
+
+    <p>
+        {{filters}}
+    </p>
+    <p>
+        {{filters | filter:"上海"}}
+    </p>
+
+    <p>
+        {{filters | filter:"g"}}
+    </p>
+
+    <p>
+        {{filters | filter:"name"}}
+    </p>
+
+    <p>
+        {{filters | filter:checkName}}
+    </p>
+
+    <p>
+        {{filters | orderBy:"en"}}
+        {{filters | orderBy:"-en"}}
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="../../Demo/css/cssReset.css">
+    <script type="text/javascript" src="../../Res/jquery.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../Res/jquery.validate.messages_cn.js"></script>
+    <script type="text/javascript" src="../../Res/MD5.js"></script>
+    <style>
+
+        .contains
+        {
+            width: 70%;
+            margin: 0 auto;
+            /*box-shadow: 1px 1px 5px #888888;*/
+        }
+        .sp_header{
+            width: 100%;
+            height:40px;
+            margin: 0 auto;
+        }
+        .sp_footer{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height:60px;
+            margin: 0 auto;
+        }
+
+        .more_footer_ul {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .bottom{
+            text-align: center;
+            color: #ff6400;
+        }
+
+        .more_footer_ul a{
+            margin: 10px 5px 0 5px;
+            height: 20px;
+            line-height: 20px;
+            color: #ff6400;
+            font-size: 13px;
+            /*font-family: "宋体";*/
+            text-decoration: underline;
+        }
+
+
+        .logo{
+            padding-left: 20px;
+            padding-top: 10px;
+            color: #ff6400;
+            font-size: 20px;
+            height:40px;
+            line-height:40px;
+        }
+
+
+        .sp_center{
+            width: 100%;
+            margin: 0 auto;
+            background:  url("../../Demo/yun-pc/images/banner01.jpg") no-repeat top center;
+            padding: 10% 0;
+        }
+
+        #regster,#login {
+            margin-left: 65%;
+            /*margin-top: 6%;*/
+            width:30%;
+            box-shadow: 1px 1px 5px #888888;
+            padding: 10px 0;
+        }
+        #regster{
+            display: none;
+        }
+        #regster > div > div,#login > div > div {
+            margin-left: 5%;
+            height: 60px;
+            line-height: 45px;
+            position: relative;
+        }
+        #regster > div > div > span ,#login > div > div > span {
+            font-size: 16px;
+            line-height: 40px;
+            color: #ff0000;
+        }
+        #regster .form-submit,#login .form-submit ,  #login .form-submit,#login .form-submit{
+            display: block;
+            width: 92%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: orchid;
+            border: 1px solid orchid;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        #regster .form-con ,  #login .form-con{
+            width: 90%;
+            height: 30px;
+            line-height: 30px;
+        }
+        #regster input[type='button'],#login input[type='button']{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+        }
+        #regster label,#login label{
+            position: absolute;
+            color: red;
+            font-size: 6px;
+            top: 29px;
+            left: 0px;
+        }
+        #regster .div_register, #login .div_register{
+            font-size: 30px;
+            opacity: 0.6;
+            text-align: center;
+        }
+
+        #regster .form_waiting, #login .form_waiting{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<script>
+    $(function(){
+
+
+        $("form").validate({
+
+            submitHandler: function(){
+
+                $(".form-submit").attr("disabled",true);
+
+                $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                //发送请求
+                $.ajax({
+                    url:"/sp/user_login",
+                    type : "post",
+                    data:$("#login").serialize(),
+                    dataType:"json",
+                    success: function (response) {
+                        var code = response["code"];
+                        var message = response["msg"];
+                        if (code == '10000'){
+                            window.location.href = "index.html";
+                        }else {
+                            alert(message);
+                        }
+                        $(".form-submit").attr("disabled",false);
+                        $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                    },
+                    error:function () {
+                        alert("登录失败");
+                        $(".form-submit").attr("disabled", false);
+                        $(".form_waiting").siblings().addClass("form_waiting").end().removeClass("form_waiting");
+                    }
+                });
+            }
+        });
+
+        var headerH = $(".sp_header").height();
+
+        var footerH = $(".sp_footer").height();
+
+        $(".contains").height($(document).height());
+
+        $(".sp_footer").css({
+
+            "top": $(".contains").height() - footerH
+
+        });
+
+        $(".sp_center").height($(".sp_footer").offset().top- headerH);
+
+
+    });
+</script>
+
+
+<div class="contains">
+
+    <div class="sp_header">
+        <div class="logo">
+            <div>
+                xxx
+                <img src="../../Demo/images/banner01.jpg" height="30px"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="sp_center">
+
+        <form id="login">
+            <div class="div_register">登录</div>
+            <div>
+                <div>
+                    <input type="text"  class="required form-con" name="userName" placeholder="用户名/邮箱" />
+                    <span></span>
+                </div>
+                <div>
+                    <input type="password" id="pwd" class="form-con" name="pwd" minlength="6" placeholder="密码" />
+                    <span>*</span>
+                </div>
+                <div class="div_submit">
+                    <button class="form-submit">
+                    <span>
+                        登录
+                    </span>
+                        <span class="form_waiting">
+                        请稍后...
+                    </span>
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="sp_footer">
+        <div class="more_link">
+            <p class="more_footer_ul">
+                <a href="">我的推广</a>
+                <a href="">我的作品</a>
+                <a href="">我的资料</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+                <a href="">我的xx</a>
+            </p>
+        </div>
+        <div class="bottom">
+            xxxxxxxxxxxxxxxxxxxxxxxx
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../Res/angular.min.js"></script>
+</head>
+<body ng-app>
+
+
+    <input type="text" value="" ng-model="name">
+    <input type="text" value="" ng-model="age">
+
+
+    <!--防止加载前 显示多余的代码-->
+    <div ng-bind="name"></div>
+    <div ng-bind="name"></div>
+
+    <script>
+        alert("")
+    </script>
+
+</body>
+</html>

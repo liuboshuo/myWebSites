@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../Res/bootstrap3/css/bootstrap.css">
+    <script src="../../../Res/angularjs.js"></script>
+    <script src="index.js"></script>
+</head>
+<body ng-app ng-controller="firstController">
+
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <table class="table" ng-show="cart.length">
+            <thead>
+                <tr>
+                    <th>产品编号</th>
+                    <th>产品名字</th>
+                    <th>购买数量</th>
+                    <th>产品单价</th>
+                    <th>产品总价</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>`
+                <tr ng-repeat="data in cart | filter : search">
+                    <th>{{data.id}}</th>
+                    <th>{{data.name}}</th>
+                    <th>
+                        <button class="btn btn-primary" ng-click="reduce(data)">-</button>
+                        <input type="text" value="data.quantity" ng-model="data.quantity" />
+                        <button class="btn btn-primary" ng-click="add(data)">+</button>
+                    </th>
+                    <th>{{data.price}}</th>
+                    <th>{{data.price * data.quantity}}</th>
+                    <!-- ng-click 会脏检查 -->
+                    <th><button class="btn btn-danger" ng-click="remove(data)">删除</button></th>
+                </tr>
+                <tr>
+                    <th>总价</th>
+                    <th>{{price()}}</th>
+                    <th>总数量</th>
+                    <th>{{count()}}</th>
+                    <th colspan="2"><button class="btn btn-danger" ng-click="cart = []">清除</button></th>
+                </tr>
+            </tbody>
+        </table>
+        <p ng-hide="cart.length">购物额车为空</p>
+    </div>
+</body>
+</html>
