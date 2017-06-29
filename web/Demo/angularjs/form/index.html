@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../Res/angularjs.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="../../../Res/bootstrap3/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp">
+    <div ng-controller="firstController" class="container-fluid">
+        <form name="form">
+            <div class="form-group" ng-class="{'has-error':form.userName.$dirty && form.userName.$invalid}">
+                <div class="row">
+                    <label for="userName" class="control-label">用户名</label>
+                </div>
+                <div class="row">
+                    <input autocomplete="off" type="text"
+                           ng-maxlength="10"
+                           ng-minlength="5"
+                           ng-pattern="/^[a-zA-Z]{1}/"
+                           ng-required="true"
+                           class="form-control"
+                           id="userName"
+                           name="userName"
+                           placeholder="用户名"
+                    ng-model="data.userName">
+
+                    <div ng-show="form.userName.$dirty && form.userName.$error.maxlength" class="alert alert-danger help-block">
+                        用户名长度超过10
+                    </div>
+                    <div ng-show="form.userName.$dirty && form.userName.$error.minlength" class="alert alert-danger help-block">
+                        用户名长度小
+                    </div>
+                    <div ng-show="form.userName.$dirty && form.userName.$error.pattern" class="alert alert-danger help-block">
+                        字母开头
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group" ng-class="{'has-error':form.pwd.$dirty && form.pwd.$invalid}">
+                <div class="row">
+                    <label for="pwd" class="control-label">密码</label>
+                </div>
+                <div class="row">
+                    <input autocomplete="off" type="password"
+                           ng-maxlength="10"
+                           ng-minlength="5"
+                           ng-required="true"
+                           class="form-control"
+                           id="pwd"
+                           name="pwd"
+                           placeholder="密码"
+                           ng-model="data.pwd">
+
+                    <div ng-show="form.pwd.$dirty && form.pwd.$error.maxlength" class="alert alert-danger help-block">
+                        密码长度超过10
+                    </div>
+                    <div ng-show="form.pwd.$dirty && form.pwd.$error.minlength" class="alert alert-danger help-block">
+                        密码长度小于5
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{'has-error':form.pwdConfirm.$dirty && form.pwdConfirm.$invalid}">
+                <div class="row">
+                    <label for="pwdConfirm" class="control-label">密码确认</label>
+                </div>
+                <div class="row">
+                    <input autocomplete="off" type="password"
+                           class="form-control"
+                           id="pwdConfirm"
+                           name="pwdConfirm"
+                           placeholder="密码确认"
+                           ng-model="data.pwdConfirm">
+
+                    <div ng-show="form.pwdConfirm.$dirty && data.pwd != data.pwdConfirm" class="alert alert-danger help-block">
+                        密码不相等
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{'has-error':form.url.$dirty && form.url.$invalid}">
+                <div class="row">
+                    <label for="url" class="control-label">博客网址</label>
+                </div>
+                <div class="row">
+                    <input autocomplete="off" type="url"
+                           ng-maxlength="30"
+                           ng-minlength="5"
+                           ng-required="true"
+                           class="form-control"
+                           id="url"
+                           name="url"
+                           placeholder="博客"
+                           ng-model="data.url">
+
+                    <div ng-show="form.url.$dirty && form.url.$error.maxlength" class="alert alert-danger help-block">
+                        博客长度超过30
+                    </div>
+                    <div ng-show="form.url.$dirty && form.url.$error.minlength" class="alert alert-danger help-block">
+                        博客长度小于5
+                    </div>
+                    <div ng-show="form.url.$dirty && form.url.$error.url" class="alert alert-danger help-block">
+                        博客格式错误
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -7,82 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="790412a7-a4c0-43e7-889d-cd4bf168db49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$apply/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$apply/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$provide方法/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$provide方法/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$watch/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/$watch/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/ng-bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/多个控制器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/多个控制器/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/多个控制器共享数据/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/多个控制器共享数据/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/练习/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/练习/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/过滤器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/过滤器/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/隐士，显示引来注入方式/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/隐士，显示引来注入方式/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/angularjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/bootstrap3/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/searchpic_pro/css/cssReset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/searchpic_pro/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/searchpic_pro/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/searchpic_pro/register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$apply/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$apply/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$provide方法/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$provide方法/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$watch/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/$watch/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/ng-bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/多个控制器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/多个控制器/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/多个控制器共享数据/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/多个控制器共享数据/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/指令/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/指令/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/指令/temp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/练习/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/练习/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/过滤器/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/过滤器/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/bootStrap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/bootStrap/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/angularjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Res/bootstrap3/js/bootstrap.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/Demo/angularjs/hello-world.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/Demo/angularjs/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/kittencupCollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/form/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Demo/angularjs/form/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/controller.js" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/ng-repeat.html" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Demo/angularjs/ng-repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/angular.min.js" afterPath="$PROJECT_DIR$/out/artifacts/myWebSites_war_exploded/Res/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Demo/angularjs/controller.js" afterPath="$PROJECT_DIR$/web/Demo/angularjs/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Demo/angularjs/ng-repeat.html" afterPath="$PROJECT_DIR$/web/Demo/angularjs/ng-repeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Res/angular.min.js" afterPath="$PROJECT_DIR$/web/Res/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html" afterPath="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html" />
     </list>
     <ignored path="myWebSites.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,18 +41,7 @@
     <favorites_list name="myWebSites" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -127,8 +51,8 @@
         <option value="jsf" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -143,15 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/web_sheet_test/js/other.js" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/js/yuyue.js" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/html/app.html" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/html/footer.html" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/css/yuyue.scss.js" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/css/app.scss" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/css/footer.scss.js" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/css/other.scss" />
-        <option value="$PROJECT_DIR$/web/web_sheet_test/css/footer.scss" />
         <option value="$PROJECT_DIR$/web/web_sheet_test/css/yuyue.scss" />
         <option value="$PROJECT_DIR$/web/web_sheet_test/html/yuyue.html" />
         <option value="$PROJECT_DIR$/web/web_sheet_test/html/other.html" />
@@ -192,8 +107,17 @@
         <option value="$PROJECT_DIR$/web/Demo/bootStrap/index.js.html" />
         <option value="$PROJECT_DIR$/web/Demo/bootStrap/index.js" />
         <option value="$PROJECT_DIR$/web/Demo/bootStrap/index.html" />
-        <option value="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html" />
         <option value="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.js" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.html" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.js" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.js" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.html" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/kittencupCollapse.html" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.html" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.js" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/form/index.js" />
+        <option value="$PROJECT_DIR$/web/Demo/angularjs/form/index.html" />
       </list>
     </option>
   </component>
@@ -269,10 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,139 +211,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="指令" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller属性" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myWebSites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angularjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$watch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
       </pane>
       <pane id="PackagesPane">
         <subPane>
@@ -453,12 +245,12 @@
     <property name="SearchEverywhereHistoryKey" value="index.html&#9;FILE&#9;file:///Users/liushuo/Desktop/java/myDemo/myWebSites/web/Demo/html/index.html" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/Demo/angularjs" />
-      <recent name="$PROJECT_DIR$/web/Demo/angularjs/过滤器" />
-      <recent name="$PROJECT_DIR$/web/Res" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/web_sheet_test/images" />
       <recent name="$PROJECT_DIR$/web/web_sheet_test/css" />
+      <recent name="$PROJECT_DIR$/web/web_sheet_test/Lib" />
       <recent name="$PROJECT_DIR$/web/web_sheet_test" />
+      <recent name="$PROJECT_DIR$/web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.liushuo.controller.jsp" />
@@ -467,12 +259,12 @@
       <recent name="com.liushuo.qo" />
       <recent name="com.liushuo.pojo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/web_sheet_test/images" />
-      <recent name="$PROJECT_DIR$/web/web_sheet_test/css" />
-      <recent name="$PROJECT_DIR$/web/web_sheet_test/Lib" />
-      <recent name="$PROJECT_DIR$/web/web_sheet_test" />
-      <recent name="$PROJECT_DIR$/web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run" />
+      <recent name="$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性" />
+      <recent name="$PROJECT_DIR$/web/Demo/angularjs" />
+      <recent name="$PROJECT_DIR$/web/Demo/angularjs/过滤器" />
+      <recent name="$PROJECT_DIR$/web/Res" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat8">
@@ -1437,11 +1229,14 @@
       <workItem from="1497939360132" duration="440000" />
       <workItem from="1498103336222" duration="593000" />
       <workItem from="1498115576314" duration="1474000" />
+      <workItem from="1498273942691" duration="7138000" />
+      <workItem from="1498354997206" duration="2775000" />
+      <workItem from="1498465936860" duration="476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259428000" />
+    <option name="totallyTimeSpent" value="269817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1454,7 +1249,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32551318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1470,7 +1265,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32630098" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19313304" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19313304" sideWeight="0.49247313" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25679544" sideWeight="0.5075269" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1488,7 +1283,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935026" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3240469" sideWeight="0.48855507" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3240059" sideWeight="0.48855507" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1684,20 +1479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/ng-bind.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1709,13 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/练习/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1744,31 +1518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/指令/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/指令/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="49" column="70" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1776,7 +1525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1784,15 +1532,139 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/01-controller的scope属性/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/练习/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/隐士，显示引来注入方式/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/kittencupCollapse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/controller属性/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/accordion封装demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/constant,vale,run/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchpic_pro/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchpic_pro/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchpic_pro/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/form/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/指令/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="36" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/指令/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Demo/angularjs/form/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
         </state>
       </provider>
     </entry>

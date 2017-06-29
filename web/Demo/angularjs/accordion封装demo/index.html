@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../Res/bootstrap3/css/bootstrap.min.css">
+    <script src="../../../Res/angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="firstController">
+        <kittencup-group>
+            <kittencup-collapse ng-repeat="data in datas" heading={{data.title}} >
+                {{ data.content }}
+            </kittencup-collapse>
+        </kittencup-group>
+    </div>
+</body>
+</html>
