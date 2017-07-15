@@ -9,7 +9,8 @@
 </head>
 <body ng-app="myApp">
     <div ng-controller="firstController" class="container-fluid">
-        <form name="form">
+        <form action="form.html" name="form">
+
             <div class="form-group" ng-class="{'has-error':form.userName.$dirty && form.userName.$invalid}">
                 <div class="row">
                     <label for="userName" class="control-label">用户名</label>
@@ -24,7 +25,7 @@
                            id="userName"
                            name="userName"
                            placeholder="用户名"
-                    ng-model="data.userName">
+                           ng-model="data.userName">
 
                     <div ng-show="form.userName.$dirty && form.userName.$error.maxlength" class="alert alert-danger help-block">
                         用户名长度超过10
@@ -71,7 +72,7 @@
                            id="pwdConfirm"
                            name="pwdConfirm"
                            placeholder="密码确认"
-                           ng-model="data.pwdConfirm">
+                           ng-model="data.pwdConfirm" />
 
                     <div ng-show="form.pwdConfirm.$dirty && data.pwd != data.pwdConfirm" class="alert alert-danger help-block">
                         密码不相等
@@ -104,6 +105,65 @@
                     </div>
                 </div>
             </div>
+
+            <div class="form-group">
+                <label class="control-label col-lg-2">性别</label>
+                <div class="col-lg-10">
+                    <label class="radio-inline">
+                        <input type="radio" ng-required="true" name="sex" value="1" ng-model="data.sex" />男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-required="true" name="sex" value="2" ng-model="data.sex" />女
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">爱好:</label>
+                <div class="col-sm-10">
+                    <label class="checkbox-inline" ng-repeat="hobby in hobbies">
+                        <input type="checkbox" ng-checked="data.hobbies === undefined ?  false : data.hobbies.indexOf(hobby.id) != -1" ng-model="hobby.checked" name="hobby[]" ng-click="changeCkecked(hobby)" />{{ hobby.name }}
+                    </label>
+                </div>
+            </div>
+
+
+
+
+            <!--//ng-required有问题-->
+            <div class="form-group">
+                <label class="col-sm-2 control-label">出生地</label>
+                <div class="col-sm-3">
+                    <select class="form-control" ng-change="data.area = false " ng-model="data.province" ng-options="x.id as x.name for x in citys|cityFilter:0" ></select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" ng-model="data.area" ng-show="data.province" ng-options="x.id as x.name for x in citys|cityFilter:data.province" ></select>
+                </div>
+                <div class="col-sm-3">
+                    <select class="form-control" ng-show="data.province && data.area" ng-required="true" ng-model="data.city" ng-options="x.id as x.name for x in citys|cityFilter:data.area" ></select>
+                </div>
+            </div>
+
+            <div>
+                <label  class="col-sm-2 control-label">出生地</label>
+                <div class="col-sm-10">
+                    <text-area ng-model="data.introduct"></text-area>
+                    <text-area ng-model="data.introduct"></text-area>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" ng-disabled="form.$invalid || data.hobbies == undefined || data.hobbies.length == 0">
+                    注册
+                </button>
+                <button type="reset" class="btn btn-primary" ng-click="reset()">
+                    重置
+                </button>
+            </div>
+
         </form>
     </div>
 </body>
